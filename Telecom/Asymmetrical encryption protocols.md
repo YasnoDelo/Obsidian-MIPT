@@ -1,0 +1,1 @@
+[[Protocol|Protocols]], where all subscribers use their own [[Encription key|encription keys]]

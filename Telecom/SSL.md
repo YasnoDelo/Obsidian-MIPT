@@ -1,1 +1,1 @@
-[[Protocol]] of the [[Presentation|presentation]] layer, making security connection. Uses [[RSA]] encryption
+[[Protocol]] of the [[Presentation|presentation]] layer, making security connection. Uses differend [[Symmetrical encryption protocols|symmetrical]] ([[Diffie-Hellman]]) and [[Asymmetrical encryption protocols|asymmetrical]] ([[RSA]]) encryption protocols
