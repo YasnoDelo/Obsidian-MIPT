@@ -1,0 +1,1 @@
+[[Protocol]] of the [[Presentation|presentation]] layer, making security connection. Uses [[RSA]] encryption
