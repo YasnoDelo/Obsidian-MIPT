@@ -13,3 +13,5 @@ git clone https://github.com/YasnoDelo/Obsidian
 ```
 6. Готово, можно выбирать нужную папку в Obsidian и открыть её с помощью уже работающего приложения:
 ![pic](pictures/pic.png)
+7. Клацните на эту кнопку, чтобы открыть записи в виде общего графа:
+![pic](pictures/graph.png)
