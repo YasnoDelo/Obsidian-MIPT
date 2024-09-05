@@ -1,0 +1,1 @@
+Allows us to control sessions (connection between devices)

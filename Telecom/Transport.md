@@ -1,0 +1,1 @@
+Operates with segments/datagrams
