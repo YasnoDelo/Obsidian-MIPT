@@ -1,0 +1,1 @@
+Logical rules, describes function in the net for [[Active network equipment|active network equipment]] (not [[Passive network equipment|passive network equipment]])

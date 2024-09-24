@@ -1,0 +1,1 @@
+Just restores the signal shape and amplifies it

@@ -2,4 +2,4 @@ Simple model of [[Telecom|telecom]], devided transfer of the [[packets]] on [[la
 
 Two main models:
 1) [[OSI]]
-2) [[TCP/IP]]
+2) [[TCP,IP|TCP,IP]]
