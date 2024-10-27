@@ -6,4 +6,4 @@
 4) [[Transport]] ([[TCP]], [[UDP]], [[QUIC]])
 5) [[Session]] ([[L2F]])
 6) [[Presentation]] ([[ASCII]], [[JPEG]])
-7) [[Application]] ([[HTTP]], [[FTP]], [[SSL]])
+7) [[Application]] ([[HTTP]], [[FTP]], [[SSL]], [[SSH]] [[Telnet]])

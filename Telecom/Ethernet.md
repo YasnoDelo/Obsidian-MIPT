@@ -65,6 +65,8 @@ We can use [[VLAN]] for logical connection
 | IFG      | frame gap                                | 12             |
 ### Half/full duplex
 
+^9d6a10
+
 **Half duplex** - sometimes data goes in one direction, sometimes - in another. (now disappeared)
-**Full duplex** - always in both direction. 
+**Full duplex** - always in both direction.  ^fcb83b
 

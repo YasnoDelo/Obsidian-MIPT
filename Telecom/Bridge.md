@@ -1,3 +1,6 @@
+[[Switch]] with 2 ports
+![[Switch#^42a8c6]]
+
 Has it's own table of network structure. Divide network onto 2 sides. Do not pass collision through itself.  
 
 ### Example Table:
@@ -16,4 +19,4 @@ zzz is not valid knot in left interface - we can delete it!
 1) **Learning** - process of table fulling (by senders addresses)
 2) **Forwarding** - process of finding addresses (by destination addresses)
 
-If switch don't know device(unknown unicast), it makes broadcast 
+If switch don't know device(unknown [[unicast]]), it makes [[Broadcast|broadcast]] 

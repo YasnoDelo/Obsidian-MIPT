@@ -1,5 +1,7 @@
 (virtual local area network)
 
+Is edge for [[Broadcast|broadcast domain]]
+
 Trunk is connection between [[Switch|switches]]
 ### Trunk frame structure (IEEE 802.1q)
 
@@ -17,3 +19,12 @@ Trunk is connection between [[Switch|switches]]
 | Payload  | data                                     | 46-1500        |
 | FCS      | control sum                              | 4              |
 | IFG      | frame gap                                | 12             |
+
+![[VLAN.png]]
+
+### Types of ports
+1) **Access port или порт доступа** — A port that is on a specific [[VLAN]] and transmits untagged frames. Typically, this is a port looking at a user device
+2) **Trunk port или магистральный порт** — A port that carries tagged traffic (untagged frames means as tagged with native one). Typically, this port is raised between network devices ([[Switch|SW]], [[Router|R]])
+
+### Native VLAN
+Automatically set VLAN ID (if non-tagged frame goes through Trunk port, it automatically treated as tagged with native one) 
