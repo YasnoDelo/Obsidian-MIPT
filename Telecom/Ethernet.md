@@ -18,6 +18,8 @@ Exists on both [[Physical|physical]] and [[Data link|data link]] layers because 
 ![[straight_crossover.jpeg]]
 Was made before [[Auto MDI,MDIX]] standard appeared. Needed because of different structure of devices in the ends of line. ^b70dbf
 
+Type A on the picture, in the type B orange and green ones are swapped.
+
 ### Coding types
 ![[NRZ_Manch_RZ.jpeg]]
 ![[Manch.jpeg]]

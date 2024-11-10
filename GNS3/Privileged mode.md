@@ -38,6 +38,7 @@ disable
 | `clear line` + port_name                         | Очистить все процессы                                    |
 | `show interface` + interface name                | Подробная информация про инрефейс                        |
 | `ping` + ip name $\pm$ repeat + amount of repeat | Пинг ip-адреса                                           |
+| `show inventory`                                 | Информация про подключённые интерфейсы (с нумерацией)    |
 |                                                  |                                                          |
 | Инфо про рантайм                                 |                                                          |
 | `show run \| incl dhcp`                          | Показывает настройки именно DHCP                         |

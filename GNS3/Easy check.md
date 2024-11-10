@@ -36,10 +36,12 @@ enable secret cisco
 ```
 line vty 0 1869
 login local
-  
+```
+In [[Global config mode]] (not in config-line)
+```
 username usr secret pwd
-username cisco secret cisco
-enable secret cisco
+username cisco secret cisco     //-инициализация пользователя
+enable secret cisco             //-вход в привелегированный режим
 ```
 
 ### Настройка VLAN
@@ -120,4 +122,33 @@ int + int_name
 ip access-group 1 out
 ```
 	
+### Создание виртуальных соседей
+```
+int lo0
+ip add 192.168.20.2 255.255.255.0
+```
 
+R1
+conf t
+int f0/0
+ip add 192.168.1.1 255.255.0.0
+no sh
+
+
+R3
+conf t
+int f0/0
+ip add 192.168.3.3 255.255.255.0
+no sh
+
+R2
+conf t
+int e2/1
+ip add 192.168.1.2 255.255.255.0
+no proxy-arp
+no sh
+
+int e2/3
+ip add 192.168.3.2 255.255.255.0
+no proxy-arp
+no sh

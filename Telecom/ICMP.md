@@ -12,6 +12,8 @@ It has to [[Management plane|manage network]]. Gives information about sent pack
 | [[IPv4#^082ef4\|DF]] = 1 (packet can't be fragment), packet too big | Packet too big                            |
 | Firewall or permission denied                                       | Communication administratively prohibited |
 
+^ab6721
+
 ### Structure
 Type+Code+Checksum
 

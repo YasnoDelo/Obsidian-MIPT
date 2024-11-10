@@ -2,6 +2,9 @@
 Because [[MAC|MAC addresses]] are not hierarchical.
 
 ### Addresses
+
+^69527c
+
 length: 32 bytes $\Rightarrow$ $2^{32}$ variants of addresses 
 
 Four octets:

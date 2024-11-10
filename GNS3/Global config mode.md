@@ -27,4 +27,6 @@ exit
 |                                         |                                                               |
 | ACL'ы                                   |                                                               |
 | `access-group` + ACL_num + `out/in`     | Настроить ACL на интерфейс                                    |
+|                                         |                                                               |
+|                                         |                                                               |
 OR ```do + any_command```

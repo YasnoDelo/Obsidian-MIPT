@@ -2,4 +2,6 @@
 access = access (port = default teg)
 
 access - to users
-trunk  - from users 
+trunk  - between  equip on provider side
+
+
