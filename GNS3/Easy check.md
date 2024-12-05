@@ -160,3 +160,14 @@ do sh ip nat stat
 | `source list 100` | Sourse, который проходит правила ACL 100          |
 | `interface f0/0`  | Sourse выше заменяется на IP на интерфейсе `f0/0` |
 | `overload`        | Указание, чтобы использовалось PAT                |
+
+## PAT+NAT
+```
+\\ in global config
+\\ инициализировали пул
+ip nat pool CiscoPool 10.0.0.1 10.0.0.10 netmask 255.0.0.0
+ip nat inside source list 100 pool CiscoPool overload
+```
+
+## NAT
+Настраивается как PAT+NAT, но без ==overload==

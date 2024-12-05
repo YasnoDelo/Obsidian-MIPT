@@ -33,3 +33,6 @@ do sh ip nat stat
 ip nat pool CiscoPool 10.0.0.1 10.0.0.10 netmask 255.0.0.0
 ip nat inside source list 100 pool CiscoPool overload
 ```
+
+## NAT
+Настраивается как PAT+NAT, но без ==overload==

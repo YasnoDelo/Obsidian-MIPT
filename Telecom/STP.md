@@ -17,12 +17,22 @@ Main terms:
 ### Choosing of root bridge
 1) Each [[Switch|switch]] sends [[BPDU]] messages, where say, that he is root
 2) If [[Switch|switch]] sees, that there is another having less Bridge ID, he starts to send messages, where says, that he knows, where root is
-
+### Choosing of blocked port (or who is ==root== port)
 The choice on which [[Switch|switch]] to block the port occurs according to the following scheme:
 
 - Lower Root Path Cost
-- Lower Bridge ID
+- Lower neighbour's Bridge ID 
 - Lower neighbour's Port ID 
+- Lower it's own Port ID 
+
+Lost port (which has lower Root Path Cost for example) is blocked. Wined ports are in  forwarding mode. 
+
+### Choosing of blocked port (or who is ==designated== port)
+The choice on which [[Switch|switch]] to block the port occurs according to the following scheme:
+
+- Lower Root Path Cost
+- Lower neighbour's Bridge ID 
+- Lower it's own Port ID 
 - Lower it's own Port ID 
 
 Lost port (which has lower Root Path Cost for example) is blocked. Wined ports are in  forwarding mode. 
