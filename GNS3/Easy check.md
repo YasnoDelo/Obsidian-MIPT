@@ -8,7 +8,7 @@ In conf_t mode:
 2) ```no shutdown```
 3) ```show cdp neigh```
 
-# Many Routers
+## Many Routers
 #### R1 (usual)
 ```
 conf t
@@ -32,7 +32,7 @@ username cisco secret cisco
 enable secret cisco
 ```
  
-### Настройка Telnet
+### Настройка [[Telnet setting|Telnet]]
 ```
 line vty 0 1869
 login local
@@ -41,10 +41,10 @@ In [[Global config mode]] (not in config-line)
 ```
 username usr secret pwd
 username cisco secret cisco     //-инициализация пользователя
-enable secret cisco             //-вход в привелегированный режим
+enable secret cisco             //-разрешения входа в привелегированный режим
 ```
 
-### Настройка VLAN
+### Настройка [[VLAN setting|VLAN]]
 ```
 conf t
 int fa0/0
@@ -78,7 +78,7 @@ ip route 0.0.0.0 0.0.0.0 192.168.20.1
 
 ```
 
-### DHCP
+### [[DHCP setting|DHCP]]
 На сервере:
 ```
 conf t
@@ -109,7 +109,7 @@ ip add dhcp
 | `ip route` + адресс сети + маска сети + default gateway + индекс приоритетности (меньше - приоритетнее) | Настроить default gateway                                           |
 | `ip route 0.0.0.0 0.0.0.0 192.168.20.1`                                                                 | Настроить так, чтобы все запросы перенаправлялись на `192.168.20.1` |
 
-### ACL basic (составляем таблицу)
+### [[Access Control List|ACL]] basic (составляем таблицу)
 ```
 ip access-list standart 1
 permit/deny + sourse_IP
@@ -118,7 +118,7 @@ int + int_name
 ip access-group 1 out
 ```
 
-### ACL extended (составляем таблицу)
+### [[Access Control List|ACL]] extended (составляем таблицу)
 ```
 ip access-list extended 100
 permit/deny + TEG + sourse_IP + destination_IP + wildcard
@@ -134,7 +134,7 @@ int lo0
 ip add 192.168.20.2 255.255.255.0
 ```
 
-### NAT/PAT
+### [[NAT,PAT settings|NAT/PAT]]
 
 #### R1
 ```
@@ -148,6 +148,8 @@ ip nat outside
 
 // Далее в priveleged mode
 ip nat inside source list 100 interface f0/0 overload
+do sh ip nat tra
+do sh ip nat stat
 ```
 
 
