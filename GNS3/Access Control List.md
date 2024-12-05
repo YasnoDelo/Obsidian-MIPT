@@ -82,3 +82,30 @@ ip access-group 1 out
 ```
 
 
+## IPv6
+
+
+| New comand                           | Description                                |
+| ------------------------------------ | ------------------------------------------ |
+| `Ext named`                          |                                            |
+| `traffic-filter` + ACL_name + in/out | Навешивает ACL на интерфейс                |
+|                                      |                                            |
+|                                      | 3 неявных команды в конце + NDP + imp deny |
+|                                      |                                            |
+|                                      |                                            |
+```
+line vty 0 1869
+login local
+  
+username cisco secret cisco
+enable secret cisco
+```
+R1
+```
+ipv6 access-list cisco
+deny tcp any host 2001:25::5
+permit ipv6 any any
+
+int f0/0
+ipv6 traffic-filter cisco in
+```

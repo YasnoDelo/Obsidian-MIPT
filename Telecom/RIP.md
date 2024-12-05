@@ -46,9 +46,9 @@ That's why [[RIP]] is slow - because far routers get to know about router remove
 ### Fighting loops
 1) **Split horizon** — information about updating the route database is not sent **back** to the used interfaces
 2) **Triggered update** — updates are sent immediately when a route changes, instead of waiting for the Update timer to expire. 
-3) **Route poisoning** — this is the forced removal of a route and its transfer to a hold state, used to combat route loops. 
-4) **Poison reverse** — The route is marked as unreachable, i.e. with a metric of 16, and sent in updates.
-5) Freezing changes - while [[RIP#^3a9c36|holddown timer]] isn't expired, router can't update info about this [[Prefix|prefix]]
+3) **Route poisoning** — The route is marked as unreachable, i.e. with a metric of 16, and sent in updates.. 
+4) **Poison reverse** — towards the interface from which we received the best route, we send the same prefix back in the update with a metric of 16, i.e. we mark it as unreachable. In our example, R2 sends an update to R1 that the metric to network A is 16 
+5) **Freezing changes** - while [[RIP#^3a9c36|holddown timer]] isn't expired, router can't update info about this [[Prefix|prefix]]
 
 ### RIPv1
 Classful routing protocol in [[IPv4]]
@@ -60,3 +60,4 @@ Uses masks
 Supports [[VLSM]]
 ### RIPng
 For [[IPv6]]
+

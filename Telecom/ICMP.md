@@ -17,3 +17,13 @@ It has to [[Management plane|manage network]]. Gives information about sent pack
 ### Structure
 Type+Code+Checksum
 
+## In IPv6
+Works with [[NDP]]
+
+RS - Router Solicitation
+RA - Router Advertisement
+
+NS - Neighbour Solicitation
+RA - Neighbour Advertisement
+
+Redirect

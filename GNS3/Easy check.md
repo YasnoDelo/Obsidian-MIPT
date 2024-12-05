@@ -75,9 +75,11 @@ no sh
 int fa0/0.20
 ip add 192.168.20.2 255.255.255.0
 ip route 0.0.0.0 0.0.0.0 192.168.20.1
+
 ```
 
 ### DHCP
+На сервере:
 ```
 conf t
 int fa0/0
@@ -91,6 +93,10 @@ lease N N N
 
 ip dhcp excl 192.168.0.1 192.168.0.15
 
+```
+На клиенте:
+```
+ip add dhcp
 ```
 
 | Команда                                                                                                 | Описание                                                            |
@@ -128,27 +134,27 @@ int lo0
 ip add 192.168.20.2 255.255.255.0
 ```
 
-R1
-conf t
+### NAT/PAT
+
+#### R1
+```
+ip access-list extended 100
+permit ip 192.168.134.0 0.0.0.255 any
+int g1/0
+ip nat inside
+
 int f0/0
-ip add 192.168.1.1 255.255.0.0
-no sh
+ip nat outside
+
+// Далее в priveleged mode
+ip nat inside source list 100 interface f0/0 overload
+```
 
 
-R3
-conf t
-int f0/0
-ip add 192.168.3.3 255.255.255.0
-no sh
-
-R2
-conf t
-int e2/1
-ip add 192.168.1.2 255.255.255.0
-no proxy-arp
-no sh
-
-int e2/3
-ip add 192.168.3.2 255.255.255.0
-no proxy-arp
-no sh
+| ПО ЧАСТЯМ         | ЗАЧЕМ                                             |
+| ----------------- | ------------------------------------------------- |
+| `ip nat`          | командуем для nat                                 |
+| `inside`          | говорим, что начинаем разбирать логику трансляции |
+| `source list 100` | Sourse, который проходит правила ACL 100          |
+| `interface f0/0`  | Sourse выше заменяется на IP на интерфейсе `f0/0` |
+| `overload`        | Указание, чтобы использовалось PAT                |

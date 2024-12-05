@@ -13,7 +13,7 @@ Four octets:
 | ---- | ---- | ---- | ---- | ------------------------ |
 | 192. | 168. | 15.  | 47   | usual                    |
 | 255. | 255. | 255. | 255. | [[Broadcast\|broadcast]] |
-\
+
 ### Header format
 
 ^157405
@@ -24,15 +24,15 @@ Minimum size is 20 byte!
 | Name                | Value                                                                                                  | Meaning                                                                |
 | ------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | Version             | Always equal to 4                                                                                      | :)                                                                     |
-| IHL                 | 5-15                                                                                                   | Internet Header Length                                                 |
+| IHL                 | 5-15                                                                                                   | Internet Header Length (in 4-bytes words)                              |
 | DSCP                |                                                                                                        | Differentiated Services Code Point                                     |
 | ECN                 |                                                                                                        | Explicit Congestion Notification                                       |
 | Total Length        |                                                                                                        | Total Length including header and data                                 |
-| Identification      |                                                                                                        | Used to define, [[IPv4#^5c35ae\|what part]] of divided data came       |
+| Identification      |                                                                                                        | Used to define, what part of divided data came                         |
 | Flags               | - bit 0: Reserved; must be zero<br>- bit 1: Don't Fragment (DF)<br>- bit 2: More Fragments (MF)        |                                                                        |
 | Fragment offset     | - 1st [[IPv4#^5c35ae\|part]]:  is not shifted<br>- 2nd [[IPv4#^5c35ae\|part]]:  shifted from beginning | Offset of current message from the beginning (counts in 8-bytes words) |
 | TTL                 | 255 minus amount of devices packet went througth                                                       | Time to live                                                           |
-| Protocol            |                                                                                                        |                                                                        |
+| Protocol            | 3                                                                                                      |                                                                        |
 | Header checksum     |                                                                                                        |                                                                        |
 | Source address      |                                                                                                        |                                                                        |
 | Destination address |                                                                                                        |                                                                        |

@@ -12,7 +12,7 @@ Uses [[Port|porst]] and [[Socket|sockets]]
 
 ### Connection termination
 ![[tcp_termination.png]]
-ACK and FIN can be send in one message
+ACK and FIN from server can be send in one message
 
 ### Sliding window
 ![[Sliding_window.png]] ^6d4218
@@ -32,9 +32,9 @@ We send large packet with upper [[IPv4#^082ef4|flag]] "do not fragment". Too big
 
 Or we can use [[MSS]] :)
 # Classic way
-Right window edge is last ACKed packet
+Left window edge is last ACKed packet
 
-### Massive ACKs avoidance
+### Massive ACKs avoidance (Delayed Acknowledgement)
 If A->B sends lots of packets, B have to send lots of ACKs. That's why was figured out algorithm of Multyacknowledgment when B sends 1 ACK on several packets
 
 # Nowadays

@@ -1,5 +1,6 @@
+Process on the [[Router]] 
 1) Table fulling
-2) 
+2) Table using
 
 | Protocol                                                         | Abr         | Administrative distance  |
 | ---------------------------------------------------------------- | ----------- | ------------------------ |

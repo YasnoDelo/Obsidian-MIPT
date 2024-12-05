@@ -15,3 +15,4 @@ Emulator of Cisco equipment
 | ```history```, $\uparrow$, $\downarrow$ | Просмтреть историю                                    |
 | ```Ctrl A```                            | Сдвиг каретки в начало строки                         |
 | `Ctrl Shift 6 + X`                      | Выйти из `Telnet` или из другого запущенного процесса |
+|                                         |                                                       |

@@ -5,6 +5,8 @@ Is edge for [[Broadcast|broadcast domain]]
 Trunk is connection between [[Switch|switches]]
 ### Trunk frame structure (IEEE 802.1q)
 
+^c400a0
+
 | Name     | Value                                    | Lenght (bytes) |
 | -------- | ---------------------------------------- | -------------- |
 | Preamble | 10101010... for sync                     | 7              |
