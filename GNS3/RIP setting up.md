@@ -7,6 +7,8 @@
 | `network` + subnet_num   | interface in this subnet recives and sends RIP-requests                         |
 | `redistribute connected` | отсылает directly connected подсети (но не слушает и ничего по ней не передаёт) |
 | `passive-int` + int_name | Не отправляем и не слушаем int_name                                             |
+| `ip prefix-list` + ...   | Настройка фильтра                                                               |
+|                          |                                                                                 |
 
 
 R1
