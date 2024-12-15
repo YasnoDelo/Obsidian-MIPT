@@ -33,7 +33,6 @@ The choice on which [[Switch|switch]] to make forwarding as ==designated== port 
 - Lower Root Path Cost
 - Lower neighbour's Bridge ID 
 - Lower it's own Port ID 
-- Lower neighbour's Port ID
 
 Won port (which has lower Root Path Cost for example) (and who is not ==root== port) is ==designated==.
 
