@@ -43,12 +43,11 @@ L2:
 1) [[Bridge]]
 2) [[Switch]]
 
-### MAC
-[[MAC]]
+### [[MAC]]
 
 ### Topology
 #### Physical
-1) Star (physically with switch in the center)
+1) Star (physically with switch in the centre)
 2) Bus
 #### Logic
 We can use [[VLAN]] for logical connection

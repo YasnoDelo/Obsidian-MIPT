@@ -16,26 +16,26 @@ Main terms:
 
 ### Choosing of root bridge
 1) Each [[Switch|switch]] sends [[BPDU]] messages, where say, that he is root
-2) If [[Switch|switch]] sees, that there is another having less Bridge ID, he starts to send messages, where says, that he knows, where root is
-### Choosing of blocked port (or who is ==root== port)
-The choice on which [[Switch|switch]] to block the port occurs according to the following scheme:
+2) If [[Switch|switch]] sees, that there is another having less Bridge ID, he starts to send messages, where says, that it knows, what bridge is the root, and how far it is
+### Choosing of ==root== port (or who is ==root== port)
+The choice on which [[Switch|switch]] to make forwarding as ==root port== occurs according to the following scheme (The points are listed in descending order of importance):
 
 - Lower Root Path Cost
 - Lower neighbour's Bridge ID 
 - Lower neighbour's Port ID 
 - Lower it's own Port ID 
 
-Lost port (which has lower Root Path Cost for example) is blocked. Wined ports are in  forwarding mode. 
+Won port (which has lower Root Path Cost for example) is ==root== port.
 
-### Choosing of blocked port (or who is ==designated== port)
-The choice on which [[Switch|switch]] to block the port occurs according to the following scheme:
+### Choosing of ==designated== port (or who is ==designated== port)
+The choice on which [[Switch|switch]] to make forwarding as ==designated== port occurs according to the following scheme (The points are listed in descending order of importance):
 
 - Lower Root Path Cost
 - Lower neighbour's Bridge ID 
 - Lower it's own Port ID 
-- Lower it's own Port ID 
+- Lower neighbour's Port ID
 
-Lost port (which has lower Root Path Cost for example) is blocked. Wined ports are in  forwarding mode. 
+Won port (which has lower Root Path Cost for example) (and who is not ==root== port) is ==designated==.
 
 ### Ports types
 1) Root port - toward root

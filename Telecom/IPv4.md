@@ -32,7 +32,7 @@ Minimum size is 20 byte!
 | Flags               | - bit 0: Reserved; must be zero<br>- bit 1: Don't Fragment (DF)<br>- bit 2: More Fragments (MF)        |                                                                        |
 | Fragment offset     | - 1st [[IPv4#^5c35ae\|part]]:  is not shifted<br>- 2nd [[IPv4#^5c35ae\|part]]:  shifted from beginning | Offset of current message from the beginning (counts in 8-bytes words) |
 | TTL                 | 255 minus amount of devices packet went througth                                                       | Time to live                                                           |
-| Protocol            | 3                                                                                                      |                                                                        |
+| Protocol            |                                                                                                        |                                                                        |
 | Header checksum     |                                                                                                        |                                                                        |
 | Source address      |                                                                                                        |                                                                        |
 | Destination address |                                                                                                        |                                                                        |
@@ -55,8 +55,8 @@ Mask system of addressing
 | A          | 0                                     | 0.0.0.0–127.255.255.255   |           |
 | B          | 10                                    | 128.0.0.0–191.255.255.255 |           |
 | C          | 110                                   | 192.0.0.0–223.255.255.255 |           |
-| D          | 1110                                  | 224.0.0.0–255.255.255.255 | multicast |
-| E          | 1111                                  | 224.0.0.0–255.255.255.255 | reserved  |
+| D          | 1110                                  | 224.0.0.0–239.255.255.255 | multicast |
+| E          | 1111                                  | 240.0.0.0–255.255.255.255 | reserved  |
 ### [[ARP]] & [[proxy-ARP]]
 Help to understand [[MAC]], knowing IP
 
