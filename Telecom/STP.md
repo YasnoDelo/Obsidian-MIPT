@@ -77,13 +77,13 @@ No timers!
 ### Advanced fuatures
 
 
-| Name       | Description                                                      | Example                                                                                   |
-| ---------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| BPDU Guard | If [[BPDU]] received, inteface will turn off                     | Port (may be access port) to user. Use in case, when we don't wait any [[BPDU]] from user |
-| BPDU Guard | If [[BPDU]] received, port will not send any [[BPDU]]            | Port (may be access port) to user. Use in case, when we wait some [[BPDU]] from user      |
-| Root Guard | Ports with this feature can't be [[STP\|root ports]]             | Port of root (or of back up root)                                                         |
-| Port Fast  | Allow us to skip [[STP\|listening]] and [[STP\|learning]] stages | Port to user                                                                              |
-| Loop Guard | If [[BPDU]] wasn't received, port will not send any [[BPDU]]     | Port from root to backup root                                                             |
+| Name                | Description                                                      | Example                                                                                   |
+| ------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| BPDU Guard          | If [[BPDU]] received, inteface will turn off                     | Port (may be access port) to user. Use in case, when we don't wait any [[BPDU]] from user |
+| BPDU Guard advanced | If [[BPDU]] received, port will not send any [[BPDU]]            | Port (may be access port) to user. Use in case, when we wait some [[BPDU]] from user      |
+| Root Guard          | Ports with this feature can't be [[STP\|root ports]]             | Port of root (or of back up root)                                                         |
+| Port Fast           | Allow us to skip [[STP\|listening]] and [[STP\|learning]] stages | Port to user                                                                              |
+| Loop Guard          | If [[BPDU]] wasn't received, port will not send any [[BPDU]]     | Port from root to backup root                                                             |
 ### Atacks
 | Name                        | Description                                                                                        | Example                      |
 | --------------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------- |
