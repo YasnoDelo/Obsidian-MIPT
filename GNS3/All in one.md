@@ -459,11 +459,62 @@ no sh
 ip add negotiated
 ```
 #### MLPPP
+Как LAG, то есть повторное соединение
+R1:
 ```
+##Создаём новый логический интерфейс, с которого будем общаться
+int multilink 1
+enc ppp
+ppp multilink group 1
+ip add 192.168.21.1 255.255.255.252
+
+int s3/1
+enc ppp
+ppp multilink group 1
+no sh
+
+int s3/0
+enc ppp
+ppp multilink group 1
+no sh
+```
+
+R2
+```
+##Создаём новый логический интерфейс, с которого будем общаться
+int multilink 1
+enc ppp
+ppp multilink group 1
+ip add 192.168.21.2 255.255.255.252
+
+int s3/1
+enc ppp
+ppp multilink group 1
+no sh
+
+int s3/0
+enc ppp
+ppp multilink group 1
+no sh
 ```
 #### PPP unnumbered
-Создаём loopback и назначаем все интерфейсы на него
+Создаём loopback и назначаем все интерфейсы на него (то есть с этого адреса будут слаться пакеты)
+R1:
 ```
+int lo0
+ip add 1.1.1.1 255.255.255.255
+
+int s3/2
+ip unnumbered lo0
+
+int s3/3
+ip unnumbered lo0
+
+int s3/4
+ip unnumbered lo0
+
+int s3/5
+ip unnumbered lo0
 ```
 #### PPP neighbour route
 Позволяет очистить таблицу маршрутизации, чтобы не было видно соседей. Лучше не делать, если подключён сосед из известной подсети, ведь иначе не сможет пройти ping.
