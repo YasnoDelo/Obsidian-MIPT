@@ -1,0 +1,1 @@
+Providers (provider aggregatable addresses) and other organisations, uses blocks of valid [[IP]] addresses (provider independent addresses). 

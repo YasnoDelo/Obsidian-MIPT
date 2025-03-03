@@ -14,7 +14,7 @@ Some realisation:
 1) [[HSRP]] - Hot Standby Router Protocol
 #Comment
 	1. One active router and all other - standby 
-	2. Subnet balancing (via engineer's hands not real balancing)
+	2. Subnet balancing (via engineer's hands, not real balancing)
 	3. Cisco's one
 2) [[VRRP]] - Virtual Router Redundant Protocol
 #Comment
@@ -28,7 +28,7 @@ Some realisation:
 	3. Cisco's one
 
 ### Main principle
-1) There is virtual IP-address of default gateway, which users are using
-2) For [[Router|routers]] synchronising, they (routers) send [[FHRP]] messages 
-3) If active [[Router|router]] becomes disabled, there are elections of new active one.
+1) There is virtual IP-address of default gateway, which users are using.
+2) For [[Router|routers]] synchronising, they (routers) send [[FHRP]] messages.
+3) If active [[Router|router]] becomes physically disabled, there are elections of new active one.
 

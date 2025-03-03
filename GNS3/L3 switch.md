@@ -1,12 +1,13 @@
 
-| Comand                           | Descripsion                                  |
-| -------------------------------- | -------------------------------------------- |
-| `switchport`                     | Сконфигурировать интерфейс под L2            |
-| `no switchport`                  | Сконфигурировать интерфейс под L3            |
-| `switchport mode` + access/trunk | Настроить интерфейс по функции               |
-| `vlan` + num                     | Создать VLAN                                 |
-| `no vlan` + num                  | Удалить VLAN                                 |
-| `show vlan`                      | Показать, какие порты к каким VLAN относятся |
+| Comand                                 | Descripsion                                                         |
+| -------------------------------------- | ------------------------------------------------------------------- |
+| `switchport`                           | Сконфигурировать интерфейс под L2                                   |
+| `no switchport`                        | Сконфигурировать интерфейс под L3                                   |
+| `switchport mode` + access/trunk       | Настроить интерфейс по функции (настраивается поверх encapsulation) |
+| `switchport trunk encapsulation dot1q` | Настроить encapsulation                                             |
+| `vlan` + num                           | Создать VLAN                                                        |
+| `no vlan` + num                        | Удалить VLAN                                                        |
+| `show vlan`                            | Показать, какие порты к каким VLAN относятся                        |
 
 ### Like L2
 
