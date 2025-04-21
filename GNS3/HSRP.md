@@ -9,4 +9,6 @@ standby 1 timers 3 10
 /// 1 - номер группы
 ```
 
+Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие 
+
 

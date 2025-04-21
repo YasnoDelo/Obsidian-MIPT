@@ -72,3 +72,5 @@ vrrp 202 preempt
 ```
 ip route 0.0.0.0 0.0.0.0 192.168.201.1 - defaulf gateway to virtual router
 ```
+
+Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие

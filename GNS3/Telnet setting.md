@@ -1,5 +1,7 @@
-```line vty 0 1869
+```
+line vty 0 1869
 login local
+pass
 ```
 In [[Global config mode]] (not in config-line)
 ```
