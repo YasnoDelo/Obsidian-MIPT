@@ -1,2 +1,2 @@
 1) [[Digital]]
-2) [[Analog]]
+2) [[Dial-up]]

@@ -1,0 +1,48 @@
+R1
+
+conf t
+int g1/0 
+ip add 192.168.134.1 255.255.255.0
+no sh
+
+int f0/0 
+ip add 192.168.12.1 255.255.255.0
+no sh
+
+router rip
+version 2
+network 192.168.12.0
+no auto-summary
+
+R2
+conf t
+int f0/0 
+ip add 192.168.12.2 255.255.255.0
+no sh
+do sh ip int br
+
+router rip
+version 2
+network 192.168.12.0
+no auto-summary
+
+line vty 0 1869
+login local
+  
+username cisco secret cisco
+enable secret cisco
+
+R3
+conf t
+int g1/0 
+ip add 192.168.134.3 255.255.255.0
+no sh
+do sh ip int br
+
+R4
+
+conf t
+int g1/0 
+ip add 192.168.134.4 255.255.255.0
+no sh
+do sh ip int br

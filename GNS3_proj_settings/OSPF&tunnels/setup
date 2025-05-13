@@ -1,0 +1,117 @@
+++++R1
+conf t
+int e2/2
+ip add 192.168.12.1 255.255.255.0
+no sh
+
+ip route 0.0.0.0 0.0.0.0 192.168.12.2
+
+++++R2
+conf t
+int e2/1
+ip add 192.168.12.2 255.255.255.0
+no sh
+
+int e2/3
+ip add 192.168.23.2 255.255.255.0
+no sh
+
+router rip
+version 2
+no auto-summary
+red con
+no network 0.0.0.0
+network 192.168.25.0
+no passive-int e2/1
+
+int tun0
+ip add 192.168.25.2 255.255.255.0
+tunnel mode gre ip
+tunnel source Ethernet2/3
+tunnel destination 192.168.45.5
+keepalive
+
+++++R3
+conf t
+int e2/2
+ip add 192.168.23.3 255.255.255.0
+no sh
+
+int e3/4
+ip add 192.168.34.3 255.255.255.0
+no sh
+
+no router rip
+
+++++R4
+conf t
+int e3/3
+ip add 192.168.34.4 255.255.255.0
+no sh
+
+int e3/5
+ip add 192.168.45.4 255.255.255.0
+no sh
+
+no router rip
+
+++++R5
+conf t
+int e3/4
+ip add 192.168.45.5 255.255.255.0
+no sh
+
+int e3/6
+ip add 192.168.56.5 255.255.255.0
+no sh
+
+router rip
+version 2
+no auto-summary
+red con
+no network 0.0.0.0
+network 192.168.25.0
+no passive-int e3/6
+
+int tun0
+ip add 192.168.25.5 255.255.255.0
+tunnel mode gre ip
+tunnel source Ethernet3/4
+tunnel destination 192.168.23.2
+keepalive
+
+++++R6
+conf t
+int e3/5
+ip add 192.168.56.6 255.255.255.0
+no sh
+
+ip route 0.0.0.0 192.168.56.5
+
+OSPF:
+
+++++R2
+router ospf 1
+network 192.168.23.0 0.0.0.255 area 0
+passive-int e2/1
+
+++++R3
+router ospf 1
+network 0.0.0.0 255.255.255.255 area 0
+router-id 3.3.3.3
+
+++++R4
+router ospf 1
+network 0.0.0.0 255.255.255.255 area 0
+int lo0
+ip add 4.4.4.4 255.255.255.255
+int lo1
+ip add 44.44.44.44 255.255.255.255
+
+++++R5
+router ospf 1
+no network 0.0.0.0 255.255.255.255 area 0
+no passive-int tun0
+no passive-int e3/6
+network 192.168.45.0 0.0.0.255 area 0
+

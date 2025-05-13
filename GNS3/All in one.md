@@ -146,8 +146,7 @@ ip add 192.168.20.2 255.255.255.0
 | `ipv6 cef`                                | cef = Cisco Express Forvarding                                                                             |
 | `ipv6 address fe80::2 link-local`         | Задаём локальный адресс                                                                                    |
 | `ipv6 address` + prefix + mask + `eui-64` | Настроить адресс по EUI-64                                                                                 |
-|                                           |                                                                                                            |
-|                                           |                                                                                                            |
+
 ### DHCP IPv6
 ```
 ipv6 dhcp pool Name

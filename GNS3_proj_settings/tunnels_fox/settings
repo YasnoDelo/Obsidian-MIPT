@@ -1,0 +1,122 @@
+##############R1
+conf t
+int e2/0
+no sh
+ip add 10.1.0.11 255.255.0.0
+
+int lo0
+ip add 192.168.1.1 255.255.255.255
+
+int e2/2
+no sh
+ip add 192.168.0.1 255.255.255.252
+
+int tun0
+ip add 10.0.0.1 255.255.255.252
+tunnel mode gre ip
+tunnel source Ethernet2/2
+tunnel destination 192.168.0.5
+keepalive
+
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+passive-int e2/2
+red con
+
+ip route 0.0.0.0 0.0.0.0 192.168.0.2
+
+
+##############R2
+conf t
+int e2/1
+no sh
+ip add 192.168.0.2 255.255.255.252
+
+int e3/4
+no sh
+ip add 192.168.24.2 255.255.255.252
+
+int f0/0
+no sh
+ip add 192.168.23.2 255.255.255.252
+
+router rip
+ver 2
+no au
+red con
+netw 192.168.24.0
+netw 192.168.23.0
+passive-int e2/1
+
+##############R3
+conf t
+int f0/0
+no sh
+ip add 192.168.23.1 255.255.255.252
+
+int g1/0
+no sh
+ip add 192.168.34.1 255.255.255.252
+
+
+
+##############R4
+conf t
+int e3/2
+no sh
+ip add 192.168.24.2 255.255.255.252
+
+int e3/5
+no sh
+ip add 192.168.0.6 255.255.255.252
+
+int g1/0
+no sh
+ip add 192.168.34.2 255.255.255.252
+
+router rip
+ver 2
+no au
+red con
+netw 192.168.24.0
+netw 192.168.34.0
+passive-int e3/5
+
+##############R5
+conf t
+int e3/4
+no sh
+ip add 192.168.0.5 255.255.255.252
+
+int e2/0
+no sh
+ip add 10.2.0.55 255.255.0.0
+
+int lo0
+ip add 192.168.2.1 255.255.255.255
+
+int tun0
+ip add 10.0.0.2 255.255.255.252
+tunnel mode gre ip
+tunnel source Ethernet3/4
+tunnel destination 192.168.0.1
+keepalive
+
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+passive-int e3/4
+red con
+
+ip route 0.0.0.0 0.0.0.0 192.168.0.6
+
+##############PC1
+ip 10.1.0.1/16 10.1.0.11
+
+##############PC2
+ip 10.1.0.2/16 10.1.0.11
+
+##############PC3
+ip 10.2.0.3/16 10.2.0.55
+
+##############PC4
+ip 10.2.0.4/16 10.2.0.55

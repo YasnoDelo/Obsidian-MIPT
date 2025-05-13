@@ -1,0 +1,55 @@
+###############R1
+conf t
+int g2/0
+ip add 1.1.12.1 255.255.255.0
+no sh
+int e3/4
+ip add 1.1.14.1 255.255.255.0
+no sh
+
+router ospf 1
+network 1.1.14.0 0.0.0.255 area 0
+router-id 1.1.1.1
+red con subnet
+
+###############R2
+conf t
+int g1/0
+ip add 1.1.12.2 255.255.255.0
+no sh
+
+###############R3
+conf t
+int e3/5
+ip add 1.1.35.3 255.255.255.0
+no sh
+
+###############R4
+conf t
+int e3/1
+ip add 1.1.14.4 255.255.255.0
+no sh
+int e3/5
+ip add 1.1.45.4 255.255.255.0
+no sh
+
+router ospf 1
+network 1.1.14.0 0.0.0.255 area 0
+network 1.1.45.0 0.0.0.255 area 0
+router-id 4.4.4.4
+
+###############R5
+conf t
+int e3/4
+ip add 1.1.45.5 255.255.255.0
+no sh
+int e3/3
+ip add 1.1.35.5 255.255.255.0
+no sh
+
+ip route 0.0.0.0 0.0.0.0 1.1.35.3
+
+router ospf 1
+network 1.1.45.0 0.0.0.255 area 0
+router-id 5.5.5.5
+red stat subn

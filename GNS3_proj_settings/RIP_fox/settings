@@ -1,0 +1,77 @@
+##############R1
+int lo1
+ip addr 10.1.1.1 255.255.255.0
+int e2/2
+ip addr 199.1.1.1 255.255.255.252
+no shutdown
+
+router rip
+ver 2
+network 199.1.1.0
+redistribute connected
+no auto-summary
+
+##############R2
+int e2/1
+ip addr 199.1.1.2 255.255.255.252
+no shutdown
+int e3/4
+ip addr 199.11.1.1 255.255.255.252
+no shutdown
+int e2/3
+ip addr 199.10.1.2 255.255.255.252
+no shutdown
+
+router rip
+ver 2
+network 199.10.1.0
+network 199.1.1.0
+network 199.11.1.0
+no auto-summary
+
+##############R3
+int e3/5
+ip addr 199.2.1.1 255.255.255.252
+no shutdown
+int e3/4
+ip addr 199.12.1.2 255.255.255.252
+no shutdown
+int e2/2
+ip addr 199.10.1.1 255.255.255.252
+no shutdown
+
+router rip
+ver 2
+network 199.10.1.0
+network 199.2.1.0
+network 199.12.1.0
+no auto-summary
+
+##############R4
+
+int e2/2
+ip addr 199.11.1.2 255.255.255.252
+no shutdown
+int e2/3
+ip addr 199.12.1.1 255.255.255.252
+no shutdown
+
+router rip
+ver 2
+network 199.12.1.0
+network 199.11.1.0
+no auto-summary
+
+
+##############R5
+int lo1
+ip addr 10.1.1.1 255.255.255.0
+int e2/3
+ip addr 199.1.1.1 255.255.255.252
+no shutdown
+
+router rip
+ver 2
+network 199.2.1.0
+redistribute connected
+no auto-summary
