@@ -32,7 +32,7 @@ username cisco secret cisco
 enable secret cisco
 ```
  
-### Настройка [[Telnet setting|Telnet]]
+## Настройка [[Telnet setting|Telnet]]
 ```
 line vty 0 1869
 login local
@@ -44,7 +44,7 @@ username cisco secret cisco     //-инициализация пользоват
 enable secret cisco             //-разрешения входа в привелегированный режим
 ```
 
-### Настройка [[VLAN setting|VLAN]]
+## Настройка [[VLAN setting|VLAN]]
 ```
 conf t
 int fa0/0
@@ -66,7 +66,7 @@ ip add 192.168.13.1 255.255.255.0
 | `enc dot 13 nat`                    | Инкапсулируем в dot1q и говорим, что native VLAN = 13 |
 | `ip add 192.168.20.1 255.255.255.0` | Добавляем виртуальному интерфейсу ip-адресс           |
 |                                     |                                                       |
-### Настройка Роутера как хоста
+## Настройка Роутера как хоста
 ```
 conf t
 int fa0/0
@@ -78,7 +78,7 @@ ip route 0.0.0.0 0.0.0.0 192.168.20.1
 
 ```
 
-### [[DHCP setting|DHCP]]
+## [[DHCP setting|DHCP]]
 На сервере:
 ```
 conf t
@@ -118,7 +118,7 @@ int + int_name
 ip access-group 1 out
 ```
 
-### [[Access Control List|ACL]] extended (составляем таблицу)
+## [[Access Control List|ACL]] extended (составляем таблицу)
 ```
 ip access-list extended 100
 permit/deny + TEG + sourse_IP + destination_IP + wildcard
@@ -128,14 +128,14 @@ int + int_name
 ip access-group 1 out
 ```
 	
-### Создание виртуальных соседей
+## Создание виртуальных соседей
 ```
 int lo0
 ip add 192.168.20.2 255.255.255.0
 ```
 
 
-### [[IPv6 setting|IPv6]]
+## [[IPv6 setting|IPv6]]
 
 | Comand                                    | Description                                                                                                |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -147,7 +147,7 @@ ip add 192.168.20.2 255.255.255.0
 | `ipv6 address fe80::2 link-local`         | Задаём локальный адресс                                                                                    |
 | `ipv6 address` + prefix + mask + `eui-64` | Настроить адресс по EUI-64                                                                                 |
 
-### DHCP IPv6
+## DHCP IPv6
 ```
 ipv6 dhcp pool Name
 address prefix 2001:234::/64
@@ -266,7 +266,7 @@ do sh ipv6 int br
 ipv6 route ::/0 2001:25::2
 ```
 
-### [[NAT,PAT settings|NAT/PAT]]
+## [[NAT,PAT settings|NAT/PAT]]
 
 #### R1
 ```
@@ -304,7 +304,7 @@ ip nat inside source list 100 pool CiscoPool overload
 ## NAT
 Настраивается как PAT+NAT, но без ==overload==
 
-### [[Tunnel setting]]
+## [[Tunnel setting]]
 
 | Comand                            | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -325,7 +325,7 @@ tunnel destination 192.168.45.5    // адрес физического инте
 keepalive
 ```
 
-### [[OSPF setting]]
+## [[OSPF setting]]
 
 | Command                                  | Description                                            |
 | ---------------------------------------- | ------------------------------------------------------ |
@@ -336,45 +336,64 @@ keepalive
 | `clear ip ospf process`                  | Очистить таблицу маршрутизации                         |
 
 
+R2
 ```
-++++R2
-
 router ospf 1
 network 192.168.23.0 0.0.0.255 area 0
 passive-int e2/1
-
-  
-
-++++R3
-
-router ospf 1
+```
+R3
+```router ospf 1
 network 0.0.0.0 255.255.255.255 area 0
 router-id 3.3.3.3
-
-  
-
-++++R4
-
+```
+R4
+```
 router ospf 1
 network 0.0.0.0 255.255.255.255 area 0
 int lo0
 ip add 4.4.4.4 255.255.255.255
 int lo1
 ip add 44.44.44.44 255.255.255.255
-
-  
-
-++++R5
-
+```
+R5
+```
 router ospf 1
 network 192.168.45.0 0.0.0.255 area 0
 ```
 
-### [[HDLC setting|HDLC]]
+## [[HDLC setting|HDLC]]
 
-### [[PPP setting|PPP]]
+
+| command                               | discriptoin                                                                                      |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `encapsulation hdlc`                  | Выставить нужную инкапсуляцию                                                                    |
+| `show controllers` + serial<br>number | Lists whether a cable is connected to the interface, and if so, whether it is a DTE or DCE cable |
+| `clock rate`                          | Установить на DCE скорость передачи (в GNS3 все считают, что они DCE)                            |
+|                                       |                                                                                                  |
+R1
+```
+conf t
+
+int s3/4
+enc hdlc - по умолчанию
+ip add 192.168.0.1 255.255.255.0
+no sh
+```
+
+R2
+```
+conf t
+
+int s3/4
+enc hdlc - по умолчанию
+ip add 192.168.0.2 255.255.255.0
+no sh
+```
+
+## [[PPP setting|PPP]]
 R1- host, R2 - client
-#### CHAP setting:
+### CHAP setting:
 R1:
 ```
 username Cisco3 password Pwd3
@@ -400,7 +419,7 @@ ip add 192.168.13.0 255.255.255.254
 ppp chap host Cisco3
 ppp chap pass Pwd3
 ```
-#### PAP setting
+### PAP setting
 R1:
 ```
 username Cisco2 password Pwd2
@@ -421,7 +440,7 @@ ip add 192.168.12.2 255.255.255.252
 
 ppp pap sent Cisco2 pass Pwd2
 ```
-#### Different networks
+### Different networks
 Разные подсети успешно подключаются:
 R1:
 ```
@@ -439,7 +458,7 @@ enc ppp
 no sh
 ip add 192.168.41.1 255.255.255.252
 ```
-#### Address assignment
+### Address assignment
 R1:
 ```
 int s3/5
@@ -457,7 +476,7 @@ enc ppp
 no sh
 ip add negotiated
 ```
-#### MLPPP
+### MLPPP
 Как LAG, то есть повторное соединение
 R1:
 ```
@@ -496,7 +515,7 @@ enc ppp
 ppp multilink group 1
 no sh
 ```
-#### PPP unnumbered
+### PPP unnumbered
 Создаём loopback и назначаем все интерфейсы на него (то есть с этого адреса будут слаться пакеты)
 R1:
 ```
@@ -515,7 +534,7 @@ ip unnumbered lo0
 int s3/5
 ip unnumbered lo0
 ```
-#### PPP neighbour route
+### PPP neighbour route
 Позволяет очистить таблицу маршрутизации, чтобы не было видно соседей. Лучше не делать, если подключён сосед из известной подсети, ведь иначе не сможет пройти ping.
 ```
 no peer neig 
@@ -523,8 +542,85 @@ do sh ip route
 do clear ip route *
 do sh ip route
 ```
+## [[Frame relay]]
 
-### [[VRRP]]
+| command                                                                                                                             | discription                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `serial 0/1/1.1` +  `multipoint`/`point-to-point`                                                                                   | Переключиться на интерфейс (сабинтерфейс).<br>`multipoint` - если на него забинжены несколько dcli. Иначе - `point-to-point`            |
+| `enc frame-r`                                                                                                                       | Включить инкапсуляцию. Если связаны устройства cisco и не cisco, то в конце можно дописать `ietf`                                       |
+| `frame-relay interface-dlci` + dlci_num                                                                                             | Настроить на интерфейсе (или сабинтерфейсе номер DLCI)                                                                                  |
+| `do sh frame pvc`                                                                                                                   | посмотреть инфу про статистику и FR                                                                                                     |
+| `do sh frame map`                                                                                                                   | посмотреть инфу про подключения                                                                                                         |
+| `frame-relay map ip` + ip_num + dcli_num + `broadcast`<br>ex:<br>`frame-relay map ip 199.1.1.1 51 broadcast`                        | Настроить статический маршрут до ip_num через некоторую линку с dlci_num<br>Нужно, если выключен inverse-ARP, который по DLCI узнаёт IP |
+| `debug frame-relay lmi`                                                                                                             | Посмотреть информацию по соединению линка                                                                                               |
+|                                                                                                                                     |                                                                                                                                         |
+| `frame-rel switching`                                                                                                               | включить режим FR-switch                                                                                                                |
+| `frame intf` + `dte`/`dce`                                                                                                          | DTE - клиент, DCE - провайдер. в GNS3 в сторону тглупого FR-Switch'a нужно всегда ставить dte                                           |
+| `frame-relay route ` + dlci_in_num + `interface `+ int_out_name + dlci_out_num<br>ex:<br>`frame-relay route 135 interface s4/1 101` | Настройка маршрута на входном интерфейсе роутера, настроенного под FR-switch. <br><br>Причём int_name может быть и туннелем!            |
+|                                                                                                                                     |                                                                                                                                         |
+R4
+```
+conf t
+int se4/0
+no sh
+
+enc fr
+
+int s4/0.102 point-to-point
+frame-relay interface-dlci 102
+exit
+ip add 192.168.24.4 255.255.255.0
+
+do sh frame pvc
+```
+
+R2
+```
+conf t
+int se4/0
+no sh
+
+enc fr
+
+int s4/0.104 point-to-point
+frame-relay interface-dlci 104
+exit
+ip add 192.168.24.2 255.255.255.0
+```
+Важно! Чтобы [[OSPF setting|OSPF]] работал корректно, включать нужно на каждом multicast интерфейсе прописать настройку: `ip ospf network point-to multipoint`. Подробнее в запись об [[OSPF setting|OSPF]]
+## [[HSRP]]
+
+| command                                                                   | discription                                                               |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `do sh standby br`                                                        | Посмотреть информацию                                                     |
+| `standby` + group_num + `ip` +ip_num<br>ex: `standby 1 ip 192.168.10.123` | Присязать к виртуальному ip                                               |
+| `standby` + group_num + `preempt`                                         | Настроить preempt (перехват управления active при рабочем active)         |
+| `standby` + group_num + `priority` + priority_num                         | Изменить приоритет роутера                                                |
+| `standby` + group_num + `name` name_str                                   | Назначить имя                                                             |
+| `standby version` + 1 \| 2                                                | Назначить версию (на всех роутерах в группе дожны быть одинаковые версии) |
+Важно, что виртуальный IP не совпадает с IP на интерфейсе. HSRP нужно настраивать на каждом задейственном интерфейсе (или сабинтерфейсе, если дело касается VLAN)
+На каждом VLAN можно сделать свою группу и по приоритету сделать так, что каждую подсеть обслуживает свой роутер (остальные для неё - запасные)
+R1
+```
+int f0/0
+ip add 192.168.10.1 255.255.255.0
+no sh
+
+standby 1 ip 192.168.10.123
+standby 1 preempt
+standby 1 timers 3 10
+
+/// 1 - номер группы
+```
+
+Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие 
+## [[VRRP]]
+| command                                                             | discription                                                               |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `do sh vrrp br`                                                     | Посмотреть информацию                                                     |
+| `vrrp` + group_num + `ip` +ip_num<br>ex: `vrrp 1 ip 192.168.10.123` | Присязать к виртуальному ip                                               |
+| `vrrp` + group_num + `preempt`                                      | Настроить preempt (перехват управления active при рабочем active)         |
+| `vrrp` + group_num + `priority` + priority_num                      | Изменить приоритет роутера                                                |
 ### Main router upstairs
 ```
 conf t
@@ -540,7 +636,6 @@ enc dot 203
 ip add 192.168.203.20 255.255.255.0
 
 ```
-
 ### Main in 201 subn, backup in 202 subn
 ```
 conf t
@@ -594,8 +689,9 @@ vrrp 202 ip 192.168.202.1
 vrrp 202 priority 200
 vrrp 202 preempt 
 ```
-
 ### All daughter routers
 ```
 ip route 0.0.0.0 0.0.0.0 192.168.201.1 - defaulf gateway to virtual router
 ```
+
+Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие

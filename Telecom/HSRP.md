@@ -1,10 +1,11 @@
+**Hot Standby Router Protocol**
 ### Roles
 0) Group - [[Default gateway|default gateways]] united into local segment
 
 |                        | V1 groups                   | V2 groups                   |
 | ---------------------- | --------------------------- | --------------------------- |
 | Amount of groups       | 10-255                      | 0-4095                      |
-| Virtual-MAC            | $0000.0c07.ac\overline{xy}$ | $0000.0c9f.f\overline{xyz}$ |
+| Virtual-MAC            | $0000.0c07.AC\overline{xy}$ | $0000.0C9F.F\overline{xyz}$ |
 | Multicast inside group | 224.0.0.2                   | 224.0.0.102                 |
 
 1) Active

@@ -13,7 +13,7 @@
 Can be [[DCE]] and [[DTE]] on L2 and L1 (and [[DCE]] on L1 can be [[DTE]] on L2)
 ### Logical topology
 ![[VC.jpg]]
-[[VC]] - Virtual Circuit - logical neighbourhood. Can be Permanent (static, sets up by hands) or Software (dynamic, sets up by software) (like [[VPN]])
+[[VC]] - Virtual Circuit - logical neighbourhood. Can be Permanent (static, sets up by hands) or Switched (dynamic, sets up by software) (like [[VPN]])
 
 [[Access Control List]] is one on interface (for all [[VC]]) 
 
