@@ -16,8 +16,9 @@ exit
 1) No ```ping``` (just ```do ping```)
 2) No ```show verion``` (```do show verion```)
 
-| ```hostname``` + name                   | Изменяет нынешнее имя                                         |
+| command                                 | discription                                                   |
 | --------------------------------------- | ------------------------------------------------------------- |
+| ```hostname``` + name                   | Изменяет нынешнее имя                                         |
 | ```interface``` + name                  | Режим настройки интерфейса name                               |
 | `no shutdown`                           | Активировать интерфейс                                        |
 | `line vty` + fst_num + last_num         | Зайти в настройку линии                                       |

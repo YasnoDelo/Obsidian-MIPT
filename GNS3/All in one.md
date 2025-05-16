@@ -1,38 +1,61 @@
-In enable mode:
-1) ```show hosts```
-2) ```telnet name```
-3) ```show ip int brief``` 
 
-In conf_t mode:
-1) ```interface fa1/0/7```
-2) ```no shutdown```
-3) ```show cdp neigh```
+### Some commands
+| command                                 | discription                                                   |
+| --------------------------------------- | ------------------------------------------------------------- |
+| ```hostname``` + name                   | Изменяет нынешнее имя                                         |
+| ```interface``` + name                  | Режим настройки интерфейса name                               |
+| `no shutdown`                           | Активировать интерфейс                                        |
+| `line vty` + fst_num + last_num         | Зайти в настройку линии                                       |
+| `login local`                           | Создание базы данных пользователей (только в настройке линии) |
+| `username` + name + `secret` + password | Создаём нового пользователя                                   |
 
-## Many Routers
-#### R1 (usual)
-```
-conf t
-int E2/0
-ip add 192.168.0.1 255.255.255.0
-no sh
-```
+| command                                          | discription                                              |
+| ------------------------------------------------ | -------------------------------------------------------- |
+| ```show version```                               | Всякая инфа про заргузку (ОС, версия)                    |
+| ```show inventory```                             | Показывает установленные модули                          |
+| ```show env```+ ...                              | Показывает температуру и другие характеристики           |
+| ```show processes``` + ...                       | Показывает процессы                                      |
+| ```show processes cpu history```                 | Показывает графики загруженности                         |
+|                                                  |                                                          |
+| **Сессионные**                                   |                                                          |
+| ```reload```                                     | Перезагружает                                            |
+| ```show running-config```                        | Показывает содержание запущенного конфига                |
+| ```show startup-config```                        | Показывает содержание стартового конфига                 |
+| ```copy running-config startup-config```         | Перезапись из первого конфига во второй                  |
+| ```write```                                      | Записывает из рана в стартап                             |
+| ```show history```                               | Показывает историю введённых команд                      |
+|                                                  |                                                          |
+| Инфо про интерфейсы                              |                                                          |
+| ```debug``` + ...                                | Включает дебаг                                           |
+| ```undebug``` + ... / ```no debug``` + ...       | Выключает дебаг                                          |
+| ```show ip interface brief```                    | Показать все интерфейсы                                  |
+| `show cdp neighbour`                             | Показать все соседние устройства (подключённые напрямую) |
+| `show cdp entry` + name                          | Все данные об устройстве рядом                           |
+| `clear line` + port_name                         | Очистить все процессы                                    |
+| `show interface` + interface name                | Подробная информация про инрефейс                        |
+| `ping` + ip name $\pm$ repeat + amount of repeat | Пинг ip-адреса                                           |
+| `show inventory`                                 | Информация про подключённые интерфейсы (с нумерацией)    |
+|                                                  |                                                          |
+| Инфо про рантайм                                 |                                                          |
+| `show run \| incl dhcp`                          | Показывает настройки именно DHCP                         |
+|                                                  |                                                          |
+| Инфо про ACL                                     |                                                          |
+| `sh ip access`                                   | Показать все ACL'ы                                       |
+|                                                  |                                                          |
+| Инфо про протоколы                               |                                                          |
+| `sh ip protocols`                                | Инфо про протоколы                                       |
+| `sh ip arp`                                      |                                                          |
+| `sh ip ospf`                                     |                                                          |
 
-#### R3 (+ telnet)
-```
-conf t
-int E2/0
-ip add 192.168.0.3 255.255.255.0
-no sh
-
-line vty 0 1869
-login local
-  
-username usr secret pwd
-username cisco secret cisco
-enable secret cisco
-```
- 
 ## Настройка [[Telnet setting|Telnet]]
+На клиенте:
+```
+telnet + ip_num + port (можно без порта. HTTP - 80 порт)
+pass (при установке соединения попросит пароль)
+```
+
+На сервере:
+### 1 способ
 ```
 line vty 0 1869
 login local
@@ -42,6 +65,12 @@ In [[Global config mode]] (not in config-line)
 username usr secret pwd
 username cisco secret cisco     //-инициализация пользователя
 enable secret cisco             //-разрешения входа в привелегированный режим
+```
+### 2 способ
+```
+line vty 0 1869
+  password pass
+  login
 ```
 
 ## Настройка [[VLAN setting|VLAN]]
@@ -695,3 +724,21 @@ ip route 0.0.0.0 0.0.0.0 192.168.201.1 - defaulf gateway to virtual router
 ```
 
 Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие
+
+## [[Zone-based firewall]]
+
+| command                                                                                                                                        | discription                                                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `zone securityIN` + zone_name<br>ex:<br>`zone security IN`                                                                                     | Создать защищённую зону                                                                                                                                                                                          |
+| `zone-pair secu`+ pair_name + `source` zone_source_name `dest` zone_dest_name<br>ex:<br>`zone-pair secu IN2DMZ source IN dest DMZ`             | Создать пару зон (правило в одну сторону может отличаться от правила в другую)                                                                                                                                   |
+|                                                                                                                                                |                                                                                                                                                                                                                  |
+| `class-map type inspect` + `match-all`/`match-any` + class_map_name<br>ex:<br>`class-map type inspect Telnet11`                                | Создать мапу класса (её нужно будет применять в мапу политики)<br>`match-all` = если водходят все условия<br>`match-any` = если подходит хотя бы одно условие<br>Можно не писать, по умолчанияю      `match-all` |
+| `match protocol` + protocol_name<br>ex:<br>`match protocol telnet`<br>`match access-group name ACL1`                                           | Внутри настройки мапы класса добавить протоколы, входящие в класс<br>Для второго примера необходимо создать отдельно [[Access Control List\|ACL]] (например в ячейке ниже)                                       |
+| `ip access-list extended VLAN2`<br>`permit ip 192.168.12.0 0.0.0.255 any`                                                                      | [[Access Control List\|ACL]] Для подсети из конкретного [[VLAN setting\|VLAN]]                                                                                                                                   |
+|                                                                                                                                                |                                                                                                                                                                                                                  |
+| `policy-map type inspect` + policy_map_name<br>ex:<br>`policy-map type inspect IN2DMZ`                                                         | Создать мапу политики                                                                                                                                                                                            |
+| `class` + class_map_name<br>ex:<br>`class Telnet11`                                                                                            | Внутри настройки мапы политики можно привязать мапу класса                                                                                                                                                       |
+| `inspect` - туда-сюда <br>`pass` - только туда <br>`drop` - без уведомлений отбросить весь трафик, попавший в этот класс, в обоих направлениях | Для добавленной мапы класса нужно выбрать действие - одно из указанных                                                                                                                                           |
+|                                                                                                                                                |                                                                                                                                                                                                                  |
+| `zone-pair secu` + pair_name<br>`serv type inspect` policy_map_name<br>ex:<br>`zone-pair secu IN2DMZ`<br>`serv type inspect IN2DMZ`            | В настройках пары зон указать, какой политики придерживаться                                                                                                                                                     |
+| `int` + int_name<br>`zone-member sec` + zone_name<br>ex:<br>`int g1/0.12`<br>`zone-member sec IN`                                              | Добавляем в зону интерфейс, навешивая на него необходимую зону (спасибо, капитан очевидность)                                                                                                                    |
