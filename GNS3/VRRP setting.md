@@ -1,9 +1,9 @@
-| command                                                             | discription                                                               |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `do sh vrrp br`                                                     | Посмотреть информацию                                                     |
-| `vrrp` + group_num + `ip` +ip_num<br>ex: `vrrp 1 ip 192.168.10.123` | Присязать к виртуальному ip                                               |
-| `vrrp` + group_num + `preempt`                                      | Настроить preempt (перехват управления active при рабочем active)         |
-| `vrrp` + group_num + `priority` + priority_num                      | Изменить приоритет роутера                                                |
+| command                                                             | discription                                                       |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| `do sh vrrp br`                                                     | Посмотреть информацию                                             |
+| `vrrp` + group_num + `ip` +ip_num<br>ex: `vrrp 1 ip 192.168.10.123` | Присязать к виртуальному ip                                       |
+| `vrrp` + group_num + `preempt`                                      | Настроить preempt (перехват управления active при рабочем active) |
+| `vrrp` + group_num + `priority` + priority_num                      | Изменить приоритет роутера                                        |
 ### Main router upstairs
 ```
 conf t

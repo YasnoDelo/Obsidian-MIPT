@@ -617,7 +617,7 @@ exit
 ip add 192.168.24.2 255.255.255.0
 ```
 Важно! Чтобы [[OSPF setting|OSPF]] работал корректно, включать нужно на каждом multicast интерфейсе прописать настройку: `ip ospf network point-to multipoint`. Подробнее в запись об [[OSPF setting|OSPF]]
-## [[HSRP]]
+## [[HSRP setting]]
 
 | command                                                                   | discription                                                               |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -643,7 +643,7 @@ standby 1 timers 3 10
 ```
 
 Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие 
-## [[VRRP]]
+## [[VRRP setting]]
 | command                                                             | discription                                                               |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | `do sh vrrp br`                                                     | Посмотреть информацию                                                     |
@@ -725,6 +725,21 @@ ip route 0.0.0.0 0.0.0.0 192.168.201.1 - defaulf gateway to virtual router
 
 Можно использовать `standby 1 track 1 decrement 20`, где [[Track|track]] это некоторое отслеживаемое условие
 
+## [[GLBP setting|GLBP]]
+Всё как в [[VRRP setting|VRRP]] и [[HSRP setting|HSRP]]
+
+R1:
+```
+int f1/0
+ip add 192.168.123.1 255.255.255.0
+no sh
+
+glbp 1 ip 192.168.123.123
+glbp 1 preempt
+glbp 1 load-balancing weighted 
+```
+
+
 ## [[Zone-based firewall]]
 
 | command                                                                                                                                        | discription                                                                                                                                                                                                      |
@@ -803,3 +818,165 @@ inservice
 int lo0
 ip add 1.1.1.1 255.255.255.255
 ```
+
+## [[Protected VLAN setting|Protected VLAN]]
+R1:
+```
+! Настроим VLAN
+vlan 10
+  name Users
+exit
+
+! Назначим порты в VLAN
+interface range fa0/1 - 2
+  switchport mode access
+  switchport access vlan 10
+  switchport protected
+  spanning-tree portfast
+  no shutdown
+
+interface fa0/24
+  switchport mode access
+  switchport access vlan 10
+  spanning-tree portfast
+  no shutdown
+```
+
+В данном случае `fa0/1` и `fa0/2` - protected. Они не могу общаться руг с другом, но каждый из них может общаться с non-protected `fa0/24`
+
+## [[PVLAN setting|PVLAN]]
+Configuring a  [[VLAN setting|VLAN]]  as a PVLAN
+```
+configure terminal
+vlan 202
+private-vlan primary
+end
+do sh vlan private-vlan
+```
+
+```
+configure terminal
+vlan 303
+private-vlan community
+end
+show vlan private-vlan
+```
+
+```
+configure terminal
+vlan 440
+private-vlan isolated
+end
+show vlan private-vlan
+```
+
+Associating a Secondary [[VLAN setting|VLAN]] with a Primary [[VLAN setting|VLAN]] 
+
+```
+configure terminal
+vlan 202
+private-vlan association 303-307,309,440
+end
+show vlan private-vlan
+```
+
+Configuring a Layer 2 Interface as a PVLAN Promiscuous Port
+```
+configure terminal
+interface fastethernet 5/2
+switchport mode private-vlan promiscuous
+switchport private-vlan mapping 200 2 // 200 - primary, 2 - secondary vlan
+end
+```
+
+Configuring a Layer 2 Interface as a PVLAN Host Port
+```
+configure terminal
+interface fastethernet 5/1
+switchport mode private-vlan host
+switchport private-vlan host-association 200 2 // 200 - primary, 2 - secondary
+end
+```
+
+Configuring a Layer 2 Interface as a PVLAN Trunk Port
+```
+configure terminal
+interface fastethernet 5/1
+switchport private-vlan association trunk 200 2 // 200 - primary, 2 - secondary
+switchport mode private-vlan trunk
+end
+```
+
+Permitting Routing of Secondary [[VLAN setting|VLAN]] Ingress Traffic
+```
+configure terminal
+interface vlan 202
+private-vlan mapping add 303-307,309,440
+end
+show interfaces private-vlan mapping
+```
+
+## [[VRF setting|VRF]]
+
+| command                        | discription                                  |
+| ------------------------------ | -------------------------------------------- |
+| `do show ip vrf`               | показать инфу про VRF                        |
+| `ip vrf` + vrf_name            | создать VRF                                  |
+| `description` + text           | добавить описание                            |
+|                                |                                              |
+| `ip vrf forwarding` + vrf_name | определить интерфейс (или сабинтефейс) в VRF |
+| `router ospf 1 vrf` + vrf_name | Запустить OSPF в VRF                         |
+
+R1
+```
+ip vrf Cust1
+description Customer 1 with OSPF
+ip vrf Cust2
+description Customer 2 with statics
+
+int g2/0
+ip vrf forwarding Cust1 -- если настраиваем врф после настройки адреса, то его
+надо перенастроить
+ip address 192.168.12.1 255.255.255.0
+no sh
+
+router ospf 1 vrf Cust1
+net 192.168.12.0 0.0.0.255 area 0
+red con sub
+```
+
+## [[QnQ setting|QnQ]]
+Чтобы можно было связывать вот такие схемы
+![[QnQ_schema.png]]
+Где [[VLAN setting|VLAN]] у компов из разных офисов совпадают:
+![[QnQ_VLAN_plan.png]]
+Нужно настроить свитчи так:
+1) SW1,2,5,6 - access с нужным VLAN в сторону клиента и trunk в сторону провайдерского оборудования
+2) SW3,4: ![[QnQ_SW3_conf.png]]![[QnQ_SW4_conf.png]]
+3) На R1:
+```
+conf t
+int f0/0
+no sh
+
+int f0/0.112
+encapsulation dot1Q 11 second-dot1q 2
+ip add 192.168.0.1 255.255.255.0
+
+int f0/0.113
+encapsulation dot1Q 11 second-dot1q 3
+ip add 192.168.1.1 255.255.255.0
+
+int f0/0.122
+encapsulation dot1Q 12 second-dot1q 2
+ip add 192.168.2.1 255.255.255.0
+
+int f0/0.123
+encapsulation dot1Q 12 second-dot1q 3
+ip add 192.168.3.1 255.255.255.0
+```
+
+
+| command                                                        | discription                                                                                                              |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `encapsulation dot1Q` + QnQ_VLAN_num `second-dot1q` + VLAN_num | Настроить на декапсуляцию сначала внешнего тега от QnQ (QnQ_VLAN_num), а потом - внутреннего от обычного VLAN (VLAN_num) |
