@@ -12,6 +12,8 @@
 | `ip slb serverfarm` + serv_farm_name            | создать набор серверов                                                                                                        |
 | `nat server`                                    | сделать так, чтобы IP подменялся на виртуальный                                                                               |
 | `real` + ip_num + port_num                      | инициализируем сервер и порт, который нужно будет обслуживать (один сервер может добавляться несколько раз с разными портами) |
+| `maxconns` + num                                | заявить максимальную загрузку сервера                                                                                         |
+| `weight` + num                                  | заявить, как много нагрузки помещать на сервере за один круг round-robin                                                      |
 | `inservice`                                     | добавляем сервер в набор                                                                                                      |
 |                                                 |                                                                                                                               |
 | `ip slb vserver` virt_serv_name                 | создать виртуальный сервер                                                                                                    |
@@ -36,3 +38,23 @@ exit
 ```
 
 ### L2:
+R1
+```
+ip slb serverfarm SF2
+real 192.168.1.5
+inservice
+real 192.168.1.6
+inservice
+
+ip slb vserver VS1
+virtual 1.1.1.1 tcp telnet
+no inservice - пока перенастраиваем лучше выключить
+serverfarm SF2
+inservice
+```
+
+На серверах:
+```
+int lo0
+ip add 1.1.1.1 255.255.255.255
+```
