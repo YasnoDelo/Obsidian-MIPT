@@ -1,3 +1,4 @@
+![[Pasted image 20250515150723.png]]
 FR SW 1
 ```
 1 102 2 112
@@ -21,7 +22,7 @@ frame-rel switching
 int s4/0
 enc frame-r ietf
 no sh
-frame intf dte
+frame intf dte //stupid FR-switches can recognize just dte :(
 frame-relay route 135 interface s4/1 101
 
 int s4/1

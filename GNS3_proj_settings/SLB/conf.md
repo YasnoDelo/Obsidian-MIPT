@@ -1,3 +1,4 @@
+![[Pasted image 20250516195430.png]]
 ### R1 //SLB
 ```
 conf t

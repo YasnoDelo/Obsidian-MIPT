@@ -1,3 +1,4 @@
+![[Pasted image 20250515160700.png]]
 R1
 ```
 conf t
@@ -97,17 +98,8 @@ R5
 ```
 conf t
 
-int se3/4
-no sh
-
-frame-relay switching
-int se3/4
-
-enc fr
-frame-relay intf-type dce
-frame-relay route 57 int tun0 157
-
 interface Serial3/4
+no sh
 no ip address
 encapsulation frame-relay
 ipv6 address 2001:57::5/64
@@ -142,7 +134,7 @@ exit
 frame-relay switching 
 int s3/7
 frame-relay intf-type dce
-frame-relay route 57 interface tun0 157
+frame-relay route 75 interface tun0 157
 do sh frame-relay map
 ```
 
@@ -150,15 +142,8 @@ R7
 ```
 conf t
 
-int se3/6
-no sh
-
-frame-relay switching
-enc fr
-frame-relay intf-type dce
-frame-relay route 75 int tun0 175
-
 interface Serial3/6
+no sh
 no ip address
 encapsulation frame-relay
 ipv6 address 2001:57::7/64
