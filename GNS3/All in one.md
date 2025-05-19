@@ -353,7 +353,7 @@ tunnel source Ethernet2/3
 tunnel destination 192.168.45.5    // адрес физического интерфейса
 keepalive
 ```
-
+Лучше в качестве `source` использовать `Loopback`, а в качестве `destination` - IP адресс `Loopback'a` с другой стороны
 ## [[OSPF setting]]
 
 | Command                                  | Description                                            |

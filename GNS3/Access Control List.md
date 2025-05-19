@@ -29,7 +29,7 @@ Router technology, that allows identifying different types of traffic and taking
 
 ### List structure
 
-ACL ___ name/number ___
+ACL ___name/number___
 
 | line    | Condition | Action  |
 | ------- | --------- | ------- |
@@ -78,7 +78,7 @@ permit/deny + TEG + sourse_IP + destination_IP + wildcard
 exit
 
 int + int_name
-ip access-group 1 out
+ip access-group 100 out
 ```
 
 
