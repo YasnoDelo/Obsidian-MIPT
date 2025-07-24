@@ -1,6 +1,6 @@
 ## Содержание
 1) [Курс лекций Климанова](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/Telecom)
-2) [Подготовка к КР Климанова (Сделано так, чтобы всё читалось прямо с репозитория без запуска Obsidian-MIPT)  и к зачёту по сетям (задачи с зачёта группы Климанова)](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/network_assessment)
+2) [Подготовка к КР Климанова (Сделано так, чтобы всё читалось прямо с репозитория без запуска Obsidian)  и к зачёту по сетям (задачи с зачёта группы Климанова)](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/network_assessment)
 3) [Инфа по конфигам в GNS3 (Для Packet Tracer тоже сгодится)](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/GNS3)
 4) [Полные конфиги некоторых проектов о сетям для GNS3 (не все темы)](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/GNS3_proj_settings)
 5) [Теорвер Горяйного](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/Teorver)
