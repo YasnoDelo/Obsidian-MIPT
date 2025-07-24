@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"6f67f39dab93b704","x":0,"y":0,"width":250,"height":60,"type":"text","text":"Немецкая классическая философия"},
+		{"id":"be8c680c6e1c3c48","x":-200,"y":-160,"width":250,"height":60,"type":"text","text":"английская политэкономия"},
+		{"id":"bfc8f2639c1ce0f6","x":-300,"y":30,"width":250,"height":60,"type":"text","text":"французский социализм"},
+		{"id":"a4a7211f869ee464","x":-125,"y":-320,"width":250,"height":100,"type":"text","text":"всё вместе - это западная европейская цивилизация"}
+	],
+	"edges":[
+		{"id":"ad6da4c0da97d886","fromNode":"be8c680c6e1c3c48","fromSide":"right","toNode":"6f67f39dab93b704","toSide":"top"},
+		{"id":"edbe8ae0fa5e37df","fromNode":"6f67f39dab93b704","fromSide":"bottom","toNode":"bfc8f2639c1ce0f6","toSide":"right"},
+		{"id":"8ebf3d5a6557492b","fromNode":"bfc8f2639c1ce0f6","fromSide":"top","toNode":"6f67f39dab93b704","toSide":"left"},
+		{"id":"ca578a7248e10164","fromNode":"6f67f39dab93b704","fromSide":"top","toNode":"be8c680c6e1c3c48","toSide":"bottom"}
+	]
+}

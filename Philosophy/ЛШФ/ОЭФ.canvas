@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"63b72e8b7506d78a","type":"text","text":"ФК","x":60,"y":-220,"width":250,"height":60},
+		{"id":"87f97c3c759bce7e","type":"text","text":"???","x":-190,"y":-100,"width":250,"height":60},
+		{"id":"b3b70746e49e2699","type":"text","text":"А...","x":60,"y":80,"width":250,"height":60}
+	],
+	"edges":[]
+}
