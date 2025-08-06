@@ -58,20 +58,22 @@ If root disappears - setting algorythm repeats.
 ### Versions
 
 ##### RSTP
-No timers!
+No timers (just hello-timer = 2 sec)!
 #Algorythm 
+0) Root is chosen like in STP
 1) Root blocks all ports for users
 2) Root sends proposal messages
 3) All routers block all ports for traffic except of port, which received  proposal message and send agreement back
 4) 2 lvl [[Switch|switches]] repeat algorythm 
 
 ##### PVSTP
-[[VLAN]] added
+[[VLAN]] added (own tree for every [[VLAN]])
 ##### PVSTP+
 [[VLAN#^c400a0|IEEE 802.1q]] support added
 ##### Rapid PVSTP
+RSTP for each [[VLAN]]
 ##### MSTP
-Multiple STP
+Multiple STP (we can make groups of [[VLAN|VLANs]] in one instance)
 No timers!
 
 ### Advanced fuatures

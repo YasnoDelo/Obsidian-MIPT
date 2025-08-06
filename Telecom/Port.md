@@ -1,7 +1,7 @@
 Identifies process on host
 
 Connected with program.
-One port opened by 1 program
+One port is opened by 1 program
 
 Can be [[TCP]]-port or [[UDP]]-port. These terms are independent between each other. Cam be opened 23 [[UDP]] port and closed 23 [[TCP]] port
 

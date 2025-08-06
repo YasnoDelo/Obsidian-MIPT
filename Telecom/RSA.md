@@ -13,3 +13,11 @@ Encryption [[Protocol|protocol]], uses [[Asymmetrical encryption protocols|asymm
  число $d$ называется ''секретной экспонентой''
  6) Пара $(e, n)$ публикуется в качестве ''открытого ключа RSA''
  7) Пара $(d, n)$ играет роль ''закрытого ключа RSA''и держится в секрете.
+
+#Example 
+
+A -(M)-> B
+1) $A$ gets ($e_B$, $n_B$). Сообщение $M$ < $n_B$ 
+2) $A$ calculates cryptotext: $C = M^{e_B} \quad mod(n_B)$ 
+3) $A$ sends cryptotext $C$ to $B$
+4) $B$ gets cryptotext $C$ and calculates using $(n_B, d_B)$: $M = C^{d_B} \quad mod(n_B)$

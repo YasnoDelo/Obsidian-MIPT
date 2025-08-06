@@ -9,10 +9,10 @@ length: 32 bytes $\Rightarrow$ $2^{32}$ variants of addresses
 
 Four octets:
 
-| 1    | 2    | 3    | 4    | info                     |
-| ---- | ---- | ---- | ---- | ------------------------ |
-| 192. | 168. | 15.  | 47   | usual                    |
-| 255. | 255. | 255. | 255. | [[Broadcast\|broadcast]] |
+| 1    | 2    | 3    | 4   | info                     |
+| ---- | ---- | ---- | --- | ------------------------ |
+| 192. | 168. | 15.  | 47  | usual                    |
+| 255. | 255. | 255. | 255 | [[Broadcast\|broadcast]] |
 
 ### Header format
 

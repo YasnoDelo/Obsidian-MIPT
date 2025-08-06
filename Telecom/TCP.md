@@ -28,7 +28,7 @@ If network is NOT fine, we can decrease windows size until minimum size
 
 ### Path MTUD(iscovery)
 Special algorithm for getting to know MTU on the path of packet (to optimise segment size)
-We send large packet with upper [[IPv4#^082ef4|flag]] "do not fragment". Too big packet through away with special [[ICMP#^ab6721|ICMP-message]]
+We send large packet with upper [[IPv4#^082ef4|flag]] "do not fragment". Too big packet throughs away with special [[ICMP#^ab6721|ICMP-message]]
 
 Or we can use [[MSS]] :)
 # Classic way

@@ -1,4 +1,4 @@
-E->A sends lost of segments with upper [[TCP#^5e9227|SYN flag]]
+E->A sends lots of segments with upper [[TCP#^5e9227|SYN flag]]
 
 # Defence
 ### SYN Cookies
