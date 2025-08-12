@@ -69,7 +69,7 @@ No timers (just hello-timer = 2 sec)!
 ##### PVSTP
 [[VLAN]] added (own tree for every [[VLAN]])
 ##### PVSTP+
-[[VLAN#^c400a0|IEEE 802.1q]] support added
+[[VLAN#^c400a0|IEEE 802.1q]] support added. Instead of cisco's [[ISL]]
 ##### Rapid PVSTP
 RSTP for each [[VLAN]]
 ##### MSTP
