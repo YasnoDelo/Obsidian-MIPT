@@ -1,0 +1,46 @@
+#separator:tab		
+#html:true		
+#tags column:3		
+EN: What is the Spanish word for “determined / decisive”?<br>RU: Как по-испански «решительный / решающий»?	decisivo / decisiva	a2 adjective source_txt deck_otros
+EN: What is the Spanish word for “disciplinary”?<br>RU: Как по-испански «дисциплинарный»?	disciplinario / disciplinaria	a2 adjective corrected source_txt deck_otros
+EN: What is the Spanish word for “high / tall”?<br>RU: Как по-испански «высокий»?	alto / alta	a1 adjective source_txt deck_otros
+EN: What is the Spanish word for “handsome”?<br>RU: Как по-испански «красивый / симпатичный» о человеке?	guapo / guapa	a1 adjective source_txt deck_otros
+EN: What is the Spanish word for “rich / tasty”?<br>RU: Как по-испански «богатый / вкусный»?	rico / rica	a1 adjective source_txt deck_otros
+EN: What is the Spanish word for “beautiful / pretty”?<br>RU: Как по-испански «красивый / милый»?	bonito / bonita	a1 adjective source_txt deck_otros
+EN: What is the Spanish word for “yellow”?<br>RU: Как по-испански «жёлтый»?	amarillo / amarilla	a1 adjective color source_txt deck_otros
+EN: What is the Spanish word for “brown”?<br>RU: Как по-испански «коричневый»?	marrón	a1 adjective color source_txt deck_otros
+EN: What is the Spanish word for “green”?<br>RU: Как по-испански «зелёный»?	verde	a1 adjective color source_txt deck_otros
+EN: What is the Spanish word for “black”?<br>RU: Как по-испански «чёрный»?	negro / negra	a1 adjective color source_txt deck_otros
+EN: What is the Spanish word for “white”?<br>RU: Как по-испански «белый»?	blanco / blanca	a1 adjective color source_txt deck_otros
+EN: What is the Spanish word for “blue”?<br>RU: Как по-испански «синий / голубой»?	azul	a1 adjective color source_txt deck_otros
+EN: What is the Spanish word for “small”?<br>RU: Как по-испански «маленький»?	pequeño / pequeña	a1 adjective source_txt deck_otros
+EN: What is the Spanish word for “here”?<br>RU: Как по-испански «здесь / сюда»?	aquí	a1 adverb place source_txt deck_otros
+EN: What is the Spanish word for “together”?<br>RU: Как по-испански «вместе»?	juntos / juntas	a1 adverb adjective corrected source_txt deck_otros
+EN: What is the Spanish word for “near”?<br>RU: Как по-испански «рядом / близко»?	cerca	a1 adverb place source_txt deck_otros
+EN: What is the Spanish word for “behind”?<br>RU: Как по-испански «позади / за»?	detrás	a1 adverb place source_txt deck_otros
+EN: What is the Spanish word for “on / above / about”?<br>RU: Как по-испански «на / над / о теме»?	sobre	a1 preposition source_options deck_otros
+EN: What is the Spanish word for “because”?<br>RU: Как по-испански «потому что»?	porque	a1 conjunction source_txt deck_otros
+EN: What is the Spanish word for “already / now”?<br>RU: Как по-испански «уже / сейчас»?	ya	a1 adverb source_txt deck_otros
+EN: What is the Spanish word for “always”?<br>RU: Как по-испански «всегда»?	siempre	a1 adverb source_txt deck_otros
+EN: What is the Spanish word for “never”?<br>RU: Как по-испански «никогда»?	nunca	a1 adverb source_txt deck_otros
+EN: What is the Spanish word for “better”?<br>RU: Как по-испански «лучше»?	mejor	a1 adverb adjective source_txt deck_otros
+EN: What is the Spanish word for “enough / quite a lot”?<br>RU: Как по-испански «достаточно / довольно»?	bastante	a1 adverb adjective source_txt deck_otros
+EN: What is the Spanish word for “after / afterwards”?<br>RU: Как по-испански «после / потом»?	después	a1 adverb time source_txt deck_otros
+EN: What is the Spanish word for “during”?<br>RU: Как по-испански «во время / в течение»?	durante	a1 preposition time source_txt deck_otros
+EN: What is the Spanish word for “also / besides”?<br>RU: Как по-испански «кроме того / также»?	además	a1 connector source_options deck_otros
+EN: What is the Spanish word for “first / firstly”?<br>RU: Как по-испански «первый / во-первых»?	primero	a1 ordinal adverb source_txt deck_otros
+EN: What is the Spanish word for “welcome”?<br>RU: Как по-испански «добро пожаловать»?	bienvenido / bienvenida / bienvenidos / bienvenidas	a1 expression adjective corrected source_txt deck_otros
+EN: What is the Spanish word for “clear / light-colored”?<br>RU: Как по-испански «ясный / светлый»?	claro / clara	level_unspecified source_ods adjective deck_otros
+EN: What is the Spanish word for “same / equal / just like”?<br>RU: Как по-испански «одинаковый / равный / как»?<br>Context: Can mean equal/same, or “just like”, depending on sentence.	igual	level_unspecified source_ods adjective adverb context_note deck_otros
+EN: What is the Spanish word for “his / her / your formal / their”?<br>RU: Как по-испански «его / её / ваш / их; свой по контексту»?<br>Context: Russian “свой” depends on the subject; Spanish su needs context.	su	level_unspecified source_ods possessive pronoun needs_context deck_otros
+EN: What is the Spanish word for “other / another”?<br>RU: Как по-испански «другой / ещё один»?	otro / otra	level_unspecified source_ods adjective pronoun deck_otros
+EN: What is the Spanish word for “while / meanwhile”?<br>RU: Как по-испански «пока / в то время как»?<br>Context: ODS had misspelling “meintras” and English “still”; todavía/aún = still.	mientras	level_unspecified source_ods conjunction corrected_from_ods deck_otros
+EN: What is the Spanish word for “likewise / equally / also”?<br>RU: Как по-испански «также / равным образом»?	igualmente	level_unspecified source_ods adverb connector deck_otros
+EN: What is the Spanish word for “than”?<br>RU: Как по-испански «чем после сравнительной степени»?<br>Context: Use after comparatives: más alto que...	que	level_unspecified source_ods conjunction grammar context_note deck_otros
+EN: What is the Spanish word for “all / every / everybody”?<br>RU: Как по-испански «весь / все»?	todo / todos / todas	level_unspecified source_ods pronoun adjective deck_otros
+EN: What is the Spanish word for “this”?<br>RU: Как по-испански «этот / эта / это»?	este / esta / esto	level_unspecified source_ods demonstrative pronoun adjective deck_otros
+EN: What is the Spanish word for “that over there”?<br>RU: Как по-испански «тот / та / то»?<br>Context: For distant objects/ideas; ese/esa/eso is another common “that”.	aquel / aquella / aquello	level_unspecified source_ods demonstrative pronoun adjective deck_otros
+EN: What is the Spanish word for “more”?<br>RU: Как по-испански «больше / более»?	más	level_unspecified source_ods adverb quantifier deck_otros
+EN: What is the Spanish word for “also / too”?<br>RU: Как по-испански «тоже / также»?	también	level_unspecified source_ods adverb deck_otros
+EN: What is the Spanish word for “but”?<br>RU: Как по-испански «но»?	pero	level_unspecified source_ods conjunction deck_otros
+EN: What is the Spanish word for “inappropriately”?<br>RU: Как по-испански «неуместно / неподходяще»?	inapropiadamente	level_unspecified source_ods adverb deck_otros

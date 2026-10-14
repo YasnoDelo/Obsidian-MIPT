@@ -1,0 +1,60 @@
+#separator:tab		
+#html:true		
+#tags column:3		
+EN: What is the Spanish verb for “to drink”?<br>RU: Как по-испански «пить»?	beber	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to eat”?<br>RU: Как по-испански «есть / кушать»?	comer	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to live”?<br>RU: Как по-испански «жить»?	vivir	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to speak”?<br>RU: Как по-испански «говорить / разговаривать»?	hablar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to listen”?<br>RU: Как по-испански «слушать»?	escuchar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to look / to watch”?<br>RU: Как по-испански «смотреть»?	mirar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to see”?<br>RU: Как по-испански «видеть»?	ver	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to read”?<br>RU: Как по-испански «читать»?	leer	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to write”?<br>RU: Как по-испански «писать»?	escribir	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to enter”?<br>RU: Как по-испански «входить»?	entrar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to go out / to leave”?<br>RU: Как по-испански «выходить / уходить»?	salir	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to come”?<br>RU: Как по-испански «приходить / приезжать»?	venir	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to go”?<br>RU: Как по-испански «идти / ехать»?	ir	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to return”?<br>RU: Как по-испански «возвращаться»?	regresar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to travel”?<br>RU: Как по-испански «путешествовать»?	viajar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to walk / to stroll”?<br>RU: Как по-испански «гулять / прогуливаться»?	pasear	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to run”?<br>RU: Как по-испански «бегать»?	correr	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to sleep”?<br>RU: Как по-испански «спать»?	dormir	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to rest”?<br>RU: Как по-испански «отдыхать»?	descansar	a1 verb regular corrected source_txt deck_verbos
+EN: What is the Spanish verb for “to work”?<br>RU: Как по-испански «работать»?	trabajar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to study”?<br>RU: Как по-испански «учиться / изучать»?	estudiar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to learn”?<br>RU: Как по-испански «учить / изучать»?	aprender	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to buy”?<br>RU: Как по-испански «покупать»?	comprar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to take / to drink”?<br>RU: Как по-испански «брать / пить / принимать»?	tomar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to have dinner”?<br>RU: Как по-испански «ужинать»?	cenar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to cook”?<br>RU: Как по-испански «готовить еду»?	cocinar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to smoke”?<br>RU: Как по-испански «курить»?	fumar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to greet”?<br>RU: Как по-испански «здороваться / приветствовать»?	saludar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to answer”?<br>RU: Как по-испански «отвечать»?	contestar	a1 verb regular source_txt deck_verbos
+EN: What is another Spanish verb for “to answer”?<br>RU: Как ещё можно сказать «отвечать» по-испански?	responder	a1 verb regular added_correction deck_verbos
+EN: What is the Spanish verb for “to ask”?<br>RU: Как по-испански «спрашивать»?	preguntar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to say / to tell”?<br>RU: Как по-испански «сказать / говорить»?	decir	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to chat”?<br>RU: Как по-испански «болтать / беседовать»?	charlar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to receive”?<br>RU: Как по-испански «получать»?	recibir	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to invite”?<br>RU: Как по-испански «приглашать»?	invitar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to give”?<br>RU: Как по-испански «давать»?	dar	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to put / to place”?<br>RU: Как по-испански «класть / ставить»?	poner	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to want”?<br>RU: Как по-испански «хотеть»?	querer	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “can / to be able to”?<br>RU: Как по-испански «мочь / быть способным»?	poder	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to know / to know how”?<br>RU: Как по-испански «знать / уметь»?	saber	a1 verb irregular corrected source_txt deck_verbos
+EN: What is the Spanish verb for “to understand”?<br>RU: Как по-испански «понимать»?	entender	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to like”?<br>RU: Как по-испански «нравиться»?	gustar	a1 verb special source_txt deck_verbos
+EN: What is the Spanish reflexive verb for “to stay”?<br>RU: Как по-испански «оставаться»?	quedarse	a1 verb reflexive source_txt deck_verbos
+EN: What is the Spanish reflexive verb for “to remember”?<br>RU: Как по-испански «помнить / вспоминать»?	acordarse de	a1 verb reflexive source_txt deck_verbos
+EN: What is the Spanish verb for “to begin / to start”?<br>RU: Как по-испански «начинать»?	empezar	a1 verb irregular corrected source_txt deck_verbos
+EN: What is the Spanish verb for “to finish”?<br>RU: Как по-испански «заканчивать»?	terminar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to work / to function”?<br>RU: Как по-испански «работать / функционировать»?	funcionar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to attend”?<br>RU: Как по-испански «посещать / присутствовать»?	asistir	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to pass an exam / to approve”?<br>RU: Как по-испански «сдать экзамен / одобрить»?	aprobar	a1_a2 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to need”?<br>RU: Как по-испански «нуждаться / быть нужным»?	necesitar	a1 verb regular source_txt deck_verbos
+EN: What is the Spanish verb for “to have”?<br>RU: Как по-испански «иметь / у меня есть»?	tener	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to do / to make”?<br>RU: Как по-испански «делать»?	hacer	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to be / to be located”?<br>RU: Как по-испански «быть / находиться»?	estar	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish verb for “to be / to be something”?<br>RU: Как по-испански «быть / являться»?	ser	a1 verb irregular source_txt deck_verbos
+EN: What is the Spanish reflexive verb for “to be called”?<br>RU: Как по-испански «зваться / называться»?	llamarse	a1 verb reflexive source_txt deck_verbos
+EN: What is the Spanish verb for “to regain / recover / get back”?<br>RU: Как по-испански «вернуть / восстановить / снова получить»?	recuperar	level_unspecified verb source_ods regular deck_verbos
+EN: What is the Spanish verb for “to suspend / to fail an exam or course”?<br>RU: Как по-испански «приостановить / отстранить / завалить экзамен»?<br>Context: Not a universal translation for “rusticate”; for expel/rusticate use expulsar in many contexts.	suspender	level_unspecified verb source_ods regular context_school needs_context deck_verbos

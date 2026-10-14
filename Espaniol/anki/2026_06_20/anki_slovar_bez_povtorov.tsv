@@ -1,0 +1,61 @@
+#separator:tab
+#html:true
+#tags column:3
+RU: Как по-испански «вчера»?	ayer	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «сегодня»?	hoy	source_ods deck_slovar_bez_povtorov noun corrected
+RU: Как по-испански «утро/завтра»?	mañana	source_ods deck_slovar_bez_povtorov noun
+EN: How do you say “student” in Spanish?	alumno	source_ods deck_slovar_bez_povtorov noun
+EN: How do you say “lunch” in Spanish?	almuerzo	source_ods deck_slovar_bez_povtorov noun
+EN: How do you say “people” in Spanish?	gente	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «рынок»?	mercado	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «ТЦ»?	comercios	source_ods deck_slovar_bez_povtorov noun
+EN: How do you say “town” in Spanish?	pueblo	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «дед»?	abuelo	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «человек, личность»?	persona	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «день»?	día	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «хлопья, сухой завтрак»?	cereales	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «молоко»?	leche	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «автобус»?	autobús	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «клиенты»?	clientes	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «столовая»?	comedor	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «компания, фирма»?	empresa	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «физическое упражнение; тренировка»?	ejercicio	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «удостоверение, карточка, документ»?	carné<br><br><small>В Испании: carné de conducir — водительские права.</small>	source_ods deck_slovar_bez_povtorov noun source_note
+RU: Как по-испански «мясо; плоть»?	carne<br><br><small>No como carne. — Я не ем мясо.</small>	source_ods deck_slovar_bez_povtorov noun source_note
+RU: Как по-испански «город»?	la ciudad<br><br><small>Madrid es una ciudad grande. — Мадрид — большой город.</small>	source_ods deck_slovar_bez_povtorov noun source_note
+RU: Как по-испански «понедельник / в понедельник»?	el lunes	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «вторник / во вторник»?	el martes	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «среда / в среду»?	el miércoles	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «четверг / в четверг»?	el jueves	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «пятница / в пятницу»?	el viernes	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «суббота / в субботу»?	el sábado	source_ods deck_slovar_bez_povtorov noun
+RU: Как по-испански «воскресенье / в воскресенье»?	el domingo	source_ods deck_slovar_bez_povtorov noun
+EN: How do you say “think” in Spanish?	Pensar	source_ods deck_slovar_bez_povtorov verb
+EN: How do you say “prefer” in Spanish?	Preferir	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «видеть себя/встречаться/выглядеть»?	verse	source_ods deck_slovar_bez_povtorov verb corrected
+EN: How do you say “hear” in Spanish?	oír	source_ods deck_slovar_bez_povtorov verb corrected
+EN: How do you say “hope/wait” in Spanish?	esperar	source_ods deck_slovar_bez_povtorov verb
+EN: How do you say “have lunch” in Spanish?<br>RU: Как по-испански «обедать»?	almorzar	source_ods deck_slovar_bez_povtorov verb merged_source_duplicates
+EN: How do you say “cost” in Spanish?	valer / costar	source_ods deck_slovar_bez_povtorov verb corrected
+RU: Как по-испански «возвращаться»?	volver	source_ods deck_slovar_bez_povtorov verb corrected
+EN: How do you say “tell/count” in Spanish?<br>RU: Как по-испански «рассказывать/считать»?	contar	source_ods deck_slovar_bez_povtorov verb merged_source_duplicates
+RU: Как по-испански «вставать, подниматься с постели»?	levantarse	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «принимать душ»?	ducharse	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «завтракать»?	desayunar	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «обслуживать, уделять внимание»?	atender	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «ложиться спать»?	acostarse	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «учить, преподавать; показывать»?	enseñar	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «водить, управлять транспортом»?	conducir	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «вспомогательный глагол; “иметься, быть”»?	haber	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «я сделал / я сделал(а)»?	he hecho	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «стоит, обходится в цене»?	cuesta	source_ods deck_slovar_bez_povtorov verb
+RU: Как по-испански «я считаю; я рассказываю»?	cuento	source_ods deck_slovar_bez_povtorov verb
+EN: How do you say “satisfied” in Spanish?	contento	source_ods deck_slovar_bez_povtorov adjective
+EN: How do you say “happy” in Spanish?	alegre	source_ods deck_slovar_bez_povtorov adjective
+EN: How do you say “free” in Spanish?	libre	source_ods deck_slovar_bez_povtorov adjective
+EN: How do you say “hard” in Spanish?<br>RU: Как по-испански «трудный, сложный»?	difícil<br><br><small>Обычно: требует усилий. El examen es difícil.</small>	source_ods deck_slovar_bez_povtorov adjective source_note
+RU: Как по-испански «сложный, запутанный, непростой»?	complicado<br><br><small>Часто: много деталей, проблем или путаницы. La situación es complicada.</small>	source_ods deck_slovar_bez_povtorov adjective source_note
+EN: How do you say “like smth/equal” in Spanish?<br>RU: Как по-испански «как»?	como	source_ods deck_slovar_bez_povtorov other
+EN: How do you say “ago” in Spanish?	hace	source_ods deck_slovar_bez_povtorov other
+EN: How do you say “exept” in Spanish?	excepto	source_ods deck_slovar_bez_povtorov other corrected
+EN: How do you say “usually” in Spanish?	normalmente	source_ods deck_slovar_bez_povtorov other

@@ -1,0 +1,100 @@
+#separator:tab		
+#html:true		
+#tags column:3		
+EN: What is the Spanish word for “wheelchair”?<br>RU: Как по-испански «инвалидная коляска»?	la silla de ruedas	a1 noun object source_txt deck_sustantivos
+EN: What is the Spanish word for “roommate”?<br>RU: Как по-испански «сосед по комнате»?	el compañero de cuarto / la compañera de cuarto	a1 noun person source_txt deck_sustantivos
+EN: What is the Spanish word for “scholarship”?<br>RU: Как по-испански «стипендия / грант»?	la beca	a1_a2 noun education source_txt deck_sustantivos
+EN: What is the Spanish word for “currency / coin”?<br>RU: Как по-испански «валюта / монета»?	la moneda	a1 noun money source_txt deck_sustantivos
+EN: What is the Spanish word for “vegetable / vegetables”?<br>RU: Как по-испански «овощ / овощи»?	la verdura / las verduras	a1 noun food corrected source_txt deck_sustantivos
+EN: What is the Spanish word for “pencil / pencils”?<br>RU: Как по-испански «карандаш / карандаши»?	el lápiz / los lápices	a1 noun object source_txt deck_sustantivos
+EN: What is the Spanish word for “magazine / journal”?<br>RU: Как по-испански «журнал»?	la revista	a1 noun object source_txt deck_sustantivos
+EN: What is the Spanish word for “street”?<br>RU: Как по-испански «улица»?	la calle	a1 noun place source_txt deck_sustantivos
+EN: What is the Spanish word for “newspaper”?<br>RU: Как по-испански «газета»?	el periódico	a1 noun object corrected source_txt deck_sustantivos
+EN: What is the Spanish word for “desk”?<br>RU: Как по-испански «письменный стол»?	el escritorio	a1 noun house source_txt deck_sustantivos
+EN: What is the Spanish word for “birthday”?<br>RU: Как по-испански «день рождения»?	el cumpleaños	a1 noun time source_txt deck_sustantivos
+EN: What is the Spanish word for “answer” as a noun?<br>RU: Как по-испански «ответ» как существительное?	la respuesta	a1 noun communication corrected source_txt deck_sustantivos
+EN: What is the Spanish word for “question”?<br>RU: Как по-испански «вопрос»?	la pregunta	a1 noun communication source_txt deck_sustantivos
+EN: What is the Spanish word for “movie / film”?<br>RU: Как по-испански «фильм»?	la película	a1 noun media converted_source deck_sustantivos
+EN: What is the Spanish word for “ambiguity”?<br>RU: Как по-испански «неоднозначность»?	la ambigüedad	a2 noun abstract source_txt deck_sustantivos
+EN: What is the Spanish word for “couch / sofa / armchair”?<br>RU: Как по-испански «диван / кресло»?	el sillón / el sofá	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “chair / seat”?<br>RU: Как по-испански «стул / сиденье»?	la silla	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “book”?<br>RU: Как по-испански «книга»?	el libro	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “toy”?<br>RU: Как по-испански «игрушка»?	el juguete	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “table”?<br>RU: Как по-испански «стол»?	la mesa	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “plate / dish”?<br>RU: Как по-испански «тарелка / блюдо»?	el plato	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “window”?<br>RU: Как по-испански «окно»?	la ventana	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “curtain”?<br>RU: Как по-испански «занавеска / штора»?	la cortina	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “bed”?<br>RU: Как по-испански «кровать»?	la cama	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “cutlery”?<br>RU: Как по-испански «столовые приборы»?	los cubiertos	a1 noun kitchen source_house deck_sustantivos
+EN: What are the Spanish words for “knife, fork and spoon”?<br>RU: Как по-испански «нож, вилка и ложка»?	el cuchillo, el tenedor y la cuchara	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “glass”?<br>RU: Как по-испански «стакан»?	el vaso	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “cup / mug”?<br>RU: Как по-испански «чашка / кружка»?	la taza	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “mirror”?<br>RU: Как по-испански «зеркало»?	el espejo	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “lamp / light”?<br>RU: Как по-испански «лампа / светильник»?	la lámpara	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “clock / watch”?<br>RU: Как по-испански «часы»?	el reloj	a1 noun object source_house deck_sustantivos
+EN: What is the Spanish word for “door”?<br>RU: Как по-испански «дверь»?	la puerta	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “toilet”?<br>RU: Как по-испански «унитаз / туалет»?	el inodoro	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “bathroom sink”?<br>RU: Как по-испански «раковина в ванной»?	el lavabo / el lavamanos	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “shower”?<br>RU: Как по-испански «душ»?	la ducha	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “bathtub”?<br>RU: Как по-испански «ванна»?	la bañera / la bañadera	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “towel”?<br>RU: Как по-испански «полотенце»?	la toalla	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “soap”?<br>RU: Как по-испански «мыло»?	el jabón	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “toothbrush”?<br>RU: Как по-испански «зубная щётка»?	el cepillo de dientes	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “oven”?<br>RU: Как по-испански «духовка»?	el horno	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “fridge”?<br>RU: Как по-испански «холодильник»?	la nevera / la heladera	a1 noun kitchen regional source_house deck_sustantivos
+EN: What is the Spanish word for “cupboard / pantry”?<br>RU: Как по-испански «шкафчик / кладовая»?	la alacena	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “drawer”?<br>RU: Как по-испански «ящик»?	el cajón	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “rubbish bin / trash can”?<br>RU: Как по-испански «мусорное ведро»?	el bote de basura	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “closet / wardrobe”?<br>RU: Как по-испански «шкаф / гардероб»?	el armario / el ropero	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “backpack”?<br>RU: Как по-испански «рюкзак»?	la mochila	a1 noun object source_house deck_sustantivos
+EN: What is the Spanish word for “carpet / rug”?<br>RU: Как по-испански «ковёр»?	la alfombra	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “picture frame”?<br>RU: Как по-испански «фоторамка / рамка для фото»?	el marco de fotos	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “blanket”?<br>RU: Как по-испански «одеяло / плед»?	la manta / la frazada	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “pillow / cushion”?<br>RU: Как по-испански «подушка»?	la almohada / el almohadón	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “television / TV”?<br>RU: Как по-испански «телевизор»?	la televisión / el televisor / la tele	a1 noun house corrected source_house deck_sustantivos
+EN: What is the Spanish word for “notebook”?<br>RU: Как по-испански «тетрадь»?	el cuaderno	a1 noun study source_house deck_sustantivos
+EN: What is the Spanish word for “computer”?<br>RU: Как по-испански «компьютер»?	la computadora / el ordenador	a1 noun technology regional source_house deck_sustantivos
+EN: What is the Spanish word for “water bottle”?<br>RU: Как по-испански «бутылка воды»?	la botella de agua	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “shoe”?<br>RU: Как по-испански «обувь / ботинок»?	el zapato	a1 noun clothes source_house deck_sustantivos
+EN: What is the Spanish word for “tablecloth”?<br>RU: Как по-испански «скатерть»?	el mantel	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “umbrella”?<br>RU: Как по-испански «зонт»?	el paraguas	a1 noun object source_house deck_sustantivos
+EN: What is the Spanish word for “sponge”?<br>RU: Как по-испански «губка»?	la esponja	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “cooking pot”?<br>RU: Как по-испански «кастрюля»?	la olla	a1 noun kitchen source_house deck_sustantivos
+EN: What is the Spanish word for “floor”?<br>RU: Как по-испански «пол»?	el piso	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “broom”?<br>RU: Как по-испански «метла / веник»?	la escoba	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish word for “door handle”?<br>RU: Как по-испански «дверная ручка»?	la manija / el picaporte	a1 noun house regional source_house deck_sustantivos
+EN: What is the Spanish word for “hairbrush”?<br>RU: Как по-испански «расчёска / щётка для волос»?	el cepillo de pelo	a1 noun bathroom source_house deck_sustantivos
+EN: What is the Spanish word for “water tap”?<br>RU: Как по-испански «кран для воды»?	la llave de agua	a1 noun bathroom regional source_house deck_sustantivos
+EN: What is the Spanish word for “flower vase”?<br>RU: Как по-испански «ваза для цветов»?	el florero	a1 noun house source_house deck_sustantivos
+EN: What is the Spanish noun for “maid / house help”?<br>RU: Как по-испански «домработница / служанка»?<br>Context: “criada” can sound old-fashioned; “empleada doméstica” is more neutral.	la criada	level_unspecified noun source_ods person context_old_fashioned deck_sustantivos
+EN: What is the Spanish noun for “orphan”?<br>RU: Как по-испански «сирота»?	el huérfano / la huérfana	level_unspecified noun source_ods person deck_sustantivos
+EN: What is the Spanish noun for “ransom / rescue payment”?<br>RU: Как по-испански «выкуп»?<br>Context: Context matters: rescate can also mean rescue.	el rescate	level_unspecified noun source_ods abstract money deck_sustantivos
+EN: What is the Spanish noun for “anguish”?<br>RU: Как по-испански «тоска / мучение / сильная тревога»?	la angustia	level_unspecified noun source_ods abstract emotion deck_sustantivos
+EN: What is the Spanish noun for “man”?<br>RU: Как по-испански «мужчина / человек»?	el hombre	level_unspecified noun source_ods person deck_sustantivos
+EN: What is the Spanish noun for “bag / handbag”?<br>RU: Как по-испански «сумка»?	el bolso	level_unspecified noun source_ods object clothes deck_sustantivos
+EN: What is the Spanish noun for “pen / fountain pen”?<br>RU: Как по-испански «ручка / перо»?<br>Context: In many contexts “bolígrafo” is the everyday word for pen.	la pluma	level_unspecified noun source_ods object study regional_context deck_sustantivos
+EN: What is the Spanish noun for “ticket office / box office / locker”?<br>RU: Как по-испански «касса / билетная касса / шкафчик»?<br>Context: Context decides whether this is a ticket office or a locker.	la taquilla	level_unspecified noun source_ods place object context_note deck_sustantivos
+EN: What is the Spanish noun for “ticket”?<br>RU: Как по-испански «билет»?<br>Context: For event tickets, “entrada” is also common.	el billete	level_unspecified noun source_ods travel money deck_sustantivos
+EN: What is the Spanish noun for “train”?<br>RU: Как по-испански «поезд»?	el tren	level_unspecified noun source_ods transport deck_sustantivos
+EN: What is the Spanish noun for “apartment / flat”?<br>RU: Как по-испански «квартира»?	el apartamento	level_unspecified noun source_ods house place deck_sustantivos
+EN: What is the Spanish noun for “life”?<br>RU: Как по-испански «жизнь»?	la vida	level_unspecified noun source_ods abstract deck_sustantivos
+EN: What is the Spanish noun for “divan / couch”?<br>RU: Как по-испански «диван»?	el diván	level_unspecified noun source_ods house object deck_sustantivos
+EN: What is the Spanish noun for “thing”?<br>RU: Как по-испански «вещь / штука»?	la cosa	level_unspecified noun source_ods object abstract deck_sustantivos
+EN: What is the Spanish noun for “wall”?<br>RU: Как по-испански «стена»?	la pared	level_unspecified noun source_ods house deck_sustantivos
+EN: What is the Spanish noun for “print / picture / engraving”?<br>RU: Как по-испански «гравюра / картинка / отпечаток»?<br>Context: The Russian “гравюра” is narrower than Spanish estampa.	la estampa	level_unspecified noun source_ods object art context_note deck_sustantivos
+EN: What is the Spanish noun for “map”?<br>RU: Как по-испански «карта / географическая карта»?	el mapa	level_unspecified noun source_ods object travel deck_sustantivos
+EN: What is the Spanish noun for “letter”?<br>RU: Как по-испански «письмо»?<br>Context: Carta can also mean menu/card depending on context.	la carta	level_unspecified noun source_ods communication deck_sustantivos
+EN: What is the Spanish noun for “ashtray”?<br>RU: Как по-испански «пепельница»?	el cenicero	level_unspecified noun source_ods object house deck_sustantivos
+EN: What is the Spanish noun for “sun”?<br>RU: Как по-испански «солнце»?<br>Context: ODS English said “sunny”; Spanish sol is “sun”, not “sunny”.	el sol	level_unspecified noun source_ods nature corrected_from_ods deck_sustantivos
+EN: What is the Spanish noun for “heat”?<br>RU: Как по-испански «жара / тепло»?<br>Context: For “I am hot” use tengo calor, already in phrase cards.	el calor	level_unspecified noun source_ods weather abstract deck_sustantivos
+EN: What is the Spanish noun for “employee / worker”?<br>RU: Как по-испански «работник / сотрудник»?	el empleado / la empleada	level_unspecified noun source_ods person work deck_sustantivos
+EN: What is the Spanish noun for “translation”?<br>RU: Как по-испански «перевод»?	la traducción	level_unspecified noun source_ods communication study deck_sustantivos
+EN: What is the Spanish noun for “time / occasion”?<br>RU: Как по-испански «раз / случай»?	la vez	level_unspecified noun source_ods time abstract deck_sustantivos
+EN: What is the Spanish noun for “negotiations”?<br>RU: Как по-испански «переговоры»?	las negociaciones	level_unspecified noun source_ods communication work deck_sustantivos
+EN: What is the Spanish noun for “track / clue / recording”?<br>RU: Как по-испански «запись / дорожка / след / подсказка»?<br>Context: ODS says “record”; pista is usually track/clue/runway, not a vinyl record.	la pista	level_unspecified noun source_ods communication media context_note deck_sustantivos
+EN: What is the Spanish noun for “companion / classmate / colleague”?<br>RU: Как по-испански «приятель / товарищ / коллега»?	el compañero / la compañera	level_unspecified noun source_ods person deck_sustantivos
+EN: What is the Spanish noun for “name”?<br>RU: Как по-испански «имя»?	el nombre	level_unspecified noun source_ods communication person deck_sustantivos
+EN: What is the Spanish noun for “card”?<br>RU: Как по-испански «карта / карточка»?	la tarjeta	level_unspecified noun source_ods object money deck_sustantivos
+EN: What is the Spanish noun for “state / condition”?<br>RU: Как по-испански «состояние / штат / государство»?<br>Context: ODS had plural estados; singular card is more useful.	el estado	level_unspecified noun source_ods abstract place corrected_from_ods deck_sustantivos
+EN: What is the Spanish noun for “luck”?<br>RU: Как по-испански «удача»?<br>Context: Translation supplied by assistant because ODS row contained only Spanish.	la suerte	level_unspecified noun source_ods abstract deck_sustantivos
+EN: What is the Spanish noun for “homework”?<br>RU: Как по-испански «домашнее задание»?	los deberes	level_unspecified noun source_ods study deck_sustantivos
