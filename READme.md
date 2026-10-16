@@ -9,7 +9,8 @@
 8) [Общая физика - оптика](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/%D0%A4%D0%B8%D0%B7%D0%9E%D1%81)
 9) [РТ-экзамен 5 семестр (картинки с решениями задач из билетов)](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/RT-ex)
 10) [Философия](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/Philosophy)
-11) Немного мелочи по Git и Unix
+11) [Теория кино](https://github.com/YasnoDelo/Obsidian-MIPT/tree/main/Cinema)
+12) Немного мелочи по Git и Unix
 ## Как запустить чтобы всё работало
 
 1. Скачайте Obsidian-MIPT: https://Obsidian.md/download. Появится приложение вида: $Obsidian-1.5.12.AppImage$, где $1.5.12$ - это версия приложения.

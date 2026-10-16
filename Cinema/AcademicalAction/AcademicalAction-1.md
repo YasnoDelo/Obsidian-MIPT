@@ -8,8 +8,8 @@
 неадекватность знания в кандидатской по киноведению - что за аспект
 
 ## deberes
-- [ ] найти предмет исследования, написать про разные фокусы в [портал](https://artofmethod.ru/c/rsuch-closed/magistratura/7)
-- [ ] начать заполнять [форму](https://schtein.ru/content/workingmaterials/Matrix-f.pdf)
+- [ ] найти предмет исследования, написать про разные фокусы в [портал](https://artofmethod.ru/c/rsuch-closed/magistratura/7) 📅 2026-11-01
+- [ ] начать заполнять [форму](https://schtein.ru/content/workingmaterials/Matrix-f.pdf) 📅 2026-12-01
 
 
 
