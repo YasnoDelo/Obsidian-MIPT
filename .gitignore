@@ -2,3 +2,4 @@
 .dist
 my_notices/
 buf/
+.gitignore
