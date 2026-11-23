@@ -1,0 +1,48 @@
+- **Audiovisual translation (AVT)** — translation and transfer of audiovisual content, including dubbing, subtitling, voice-over, audio description, SDH and related practices.
+- **Equivalence** — the relation between source and target texts; the article argues it should include more than formal or dynamic correspondence.
+- **Localisation** — a broad term covering AVT practices and media adaptations, including videogames, remakes and format licensing.
+- **Transadaptation** — a blended term combining translation and adaptation, used to describe new AVT modes and audience-sensitive transfers.
+- **Transcreation** — a creative form of adaptation in which a product is reshaped for a target culture while keeping some link to the original.
+- **Interlingual translation** — translation between different natural languages, e.g. English into Spanish.
+- **Intralingual translation** — translation within the same language, e.g. between Latin American and European Spanish, or in SDH.
+- **Intersemiotic translation** — transfer of meaning between different sign systems, e.g. from images to words in audio description.
+- **Media adaptation** — adapting a product to another medium or format, e.g. a novel into a film.
+- **Remake** — a new version of a film or product, often across cultures; the article treats it as a form of cultural translation.
+- **Transmedia narrative** — a story told across multiple platforms and formats, with extensions and interactions.
+- **Fansubbing** — amateur subtitling produced by fans, often for content not officially translated.
+- **Fandubbing** — amateur dubbing produced by fans, usually recorded at home.
+- **Fundubbing / gag dubbing** — parody or humorous fan-made dubbing that creatively rewrites the original.
+- **SDH (Subtitling for the Deaf and the Hard of Hearing)** — subtitles that render dialogues plus noises, music and paralinguistic information for deaf and hard-of-hearing audiences.
+
+
+--- 
+
+- **What is the main argument of the article about the concept of translation and audiovisual translation?**  
+    The main argument is that audiovisual translation (AVT) and new localisation practices challenge the traditional concept of translation and, especially, the traditional notion of equivalence. AVT is multimodal, semiotic and often adaptive, so it cannot be adequately described as mere linguistic transfer. The author argues that Translation Studies should broaden the concept of translation to include dubbing, subtitling, SDH, audio description, fansubbing, fandubbing, transcreation, transmedia narratives, remakes and other forms of rewriting. He also calls for new types of equivalence, such as iconic and narrative equivalence, beyond formal and dynamic equivalence.
+    
+- **Why does audiovisual translation challenge the traditional notion of equivalence?**  
+    Because AVT involves several semiotic codes at once—language, image, sound, music, gestures, etc.—and the target text is often shaped by non-linguistic constraints such as lip synchronisation, image, audience accessibility or humour. The article gives examples where images and cultural references are changed: in dubbing, an “omelette” may become a “pie” because of lip sync; in transcreation, chopsticks become forks and yen become dollars. In funsubs, fundubs and free-commentary, the relation to the original is humorous, parodic or political rather than formal or dynamic. Therefore, equivalence cannot always be reduced to formal correspondence or dynamic effect.
+    
+- **How does the article define “localisation,” and what practices does it include under this term?**  
+    The article uses “localisation” as an umbrella term covering both consolidated and new interlingual, intralingual and intersemiotic AVT practices. These include dubbing, subtitling, surtitling, respeaking, audiosubtitling, voice-over, partial dubbing, simultaneous interpreting at film festivals, free-commentary, subtitling for the deaf and hard of hearing (SDH), audio description (AD), fansubbing and fandubbing. It also includes media adaptations such as format licensing, adaptations, transcreations and remakes. In the case of videogames, localisation covers linguistic, legal, technical, artistic and cultural adaptation of game assets.
+    
+- **What are the differences between interlingual, intralingual and intersemiotic translation, according to the article?**  
+    The article follows Jakobson’s triad. **Interlingual translation** is translation between different natural languages, e.g. English into Spanish. **Intralingual translation** is translation within the same language, for example between Latin American and European Spanish, Brazilian and European Portuguese, or in SDH. **Intersemiotic translation** is transfer between different sign systems, for example from images to words in audio description, from images to other images in transcreation, or between a natural language and a sign language.
+    
+- **Why does the author argue that intralingual translation, including SDH, should be considered a form of translation?**  
+    Because intralingual translation involves real transformation, not mere copying. The market regularly commissions retranslations between language varieties such as Latin American and Peninsular Spanish, and target cultures treat these as different translations of the same original. SDH is even clearer: it is not simply a written rendering of dialogues. It reduces dialogue, adds information about noises, music and paralinguistic features, and follows different conventions. It therefore creates a new text that draws on several codes, so it should be considered translation.
+    
+- **What is “transadaptation,” and why does the article present it as a useful term for audiovisual translation?**  
+    “Transadaptation” is a blended term combining translation and adaptation. It was proposed by Neves and used by Gambier to cover AVT modes that blur the traditional borders between translation and interpreting, and between written and oral codes. It is useful because it can account for the diversity of target audiences—different socio-cultural backgrounds, age groups and physical impairments—and for practices such as dubbing, SDH, audio description, funsubs, fundubs and videogame localisation. However, the author notes that if it covers all AVT modes, it may become simply another synonym for audiovisual translation.
+    
+- **How does the article describe transcreation, and what examples does it use to illustrate it?**  
+    Transcreation is described as an enhanced type of audiovisual translation and a consequence of digitalisation. It combines faithful transmission with creation and is linked to glocalisation: a global product is moulded for local consumers. Examples include the North American version of _Doraemon_, where yen banknotes become dollar notes, chopsticks become forks and a medical box becomes a pizza; and _Spider-Man: India_, where Peter Parker becomes Pavitr Prabhakar and the story is reset in an Indian context. The article also links transcreation to videogame localisation, where localisers are given considerable freedom to modify, omit or add elements.
+    
+- **How do transmedia narratives and media adaptations complicate the boundary between translation and adaptation?**  
+    Transmedia narratives tell a story across multiple platforms and formats, with extensions, sub-stories and audience interaction. Equivalence between formats is established through repetition or modification of semiotic signs and/or the main plot. Extensions can involve intralingual retranslations, interlingual translations, back translations and even pseudo-translations. Media adaptation is an extremely broad and fuzzy term that can cover translation, rewriting, transmedia narrative and localisation. Remakes, especially transnational remakes, are described as forms of “cultural translation.” Thus the boundary between translation and adaptation becomes difficult to draw.
+    
+- **What role do new audiences, fans, and prosumers play in changing audiovisual translation practices and norms?**  
+    New active audiences and prosumers change both the selection of materials and the norms of translation. Fansubbers and fandubbers decide what to subtitle or dub, often choosing products that distributors ignore. They change the _habitus_ of audiovisual translation. Creative subtitles, fundubs, funsubs, funads and literal video versions introduce humour, parody and ideological agendas. Fans also use fake dubbing and fake subtitles to ridicule politicians and leaders. This shifts power from distributors towards ordinary people and stretches traditional notions of equivalence, faithfulness and translation ethics.
+    
+- **What does the article conclude about the need to rethink the concepts of translation and equivalence in Translation Studies?**  
+    The article concludes that there is an open terminological battle between academia and industry over which term should be the hypernym: translation, localisation, transcreation, adaptation, etc. The author sides with those who prefer “translation,” provided it is understood broadly, not as simple linguistic transfer. Since dynamic equivalence and Skopostheorie already went beyond formal equivalence, Translation Studies can accept dubbing, subtitling, AD, SDH, fansubbing, transcreation and remakes as translation. The concept of equivalence should be expanded to include formal, dynamic, iconic, narrative and possibly heterofunctional equivalence. Finally, following Zabalbeascoa, the author warns that Translation Studies will be condemned if it cannot accept all possible ways of rewriting as its object of study.

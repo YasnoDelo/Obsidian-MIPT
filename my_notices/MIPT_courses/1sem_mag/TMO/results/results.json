@@ -1,0 +1,1208 @@
+{
+  "settings": {
+    "reps": 24,
+    "duration": 50000.0,
+    "warmup": 5000.0,
+    "seed": 20261025,
+    "output": "results"
+  },
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "self_tests": "passed",
+  "scenarios": {
+    "light": {
+      "params": {
+        "lam": 0.6,
+        "mu1": 1.5,
+        "mu2": 1.2,
+        "nu": 0.8,
+        "c1": 2,
+        "c2": 2,
+        "k": 3
+      },
+      "analytical": {
+        "loss": 0.035180865354987004,
+        "delay_success": 3.026726070964134,
+        "throughput": 0.5788914807870076,
+        "mean_n": 1.7751427269800801,
+        "time_until_exit": 2.9585712116334686,
+        "external_loss_rate": 0.010632940200327337,
+        "internal_loss_rate": 0.010475579012664864,
+        "immediate_loss": 0.01772156700054556,
+        "states": 36,
+        "tagged_states": 99,
+        "balance_residual": 1.9255430583342559e-16,
+        "stationary_residual": 2.7755575615628914e-17
+      },
+      "runs": [
+        {
+          "loss": 0.036563861995541805,
+          "delay_success": 3.0423623368060557,
+          "throughput": 0.57918,
+          "mean_n": 1.7864435929436275,
+          "time_until_exit": 2.971470462938495,
+          "arrivals": 30057,
+          "successes": 28958,
+          "losses": 1099,
+          "seed": 20261025,
+          "cohort_followup": 1.629900983927655
+        },
+        {
+          "loss": 0.03608247422680412,
+          "delay_success": 3.0376540756474206,
+          "throughput": 0.5797,
+          "mean_n": 1.788247124077756,
+          "time_until_exit": 2.97347376800426,
+          "arrivals": 30070,
+          "successes": 28985,
+          "losses": 1085,
+          "seed": 20261026,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.03719760399774961,
+          "delay_success": 3.004260565618209,
+          "throughput": 0.5819,
+          "mean_n": 1.7741635608598447,
+          "time_until_exit": 2.9356028808321546,
+          "arrivals": 30217,
+          "successes": 29093,
+          "losses": 1124,
+          "seed": 20261027,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.03765130742994717,
+          "delay_success": 3.062711072212927,
+          "throughput": 0.57556,
+          "mean_n": 1.7852205811289412,
+          "time_until_exit": 2.9858961279327394,
+          "arrivals": 29906,
+          "successes": 28780,
+          "losses": 1126,
+          "seed": 20261028,
+          "cohort_followup": 17.469619991716172
+        },
+        {
+          "loss": 0.035104843324021404,
+          "delay_success": 2.976319039086276,
+          "throughput": 0.57334,
+          "mean_n": 1.7314814429262129,
+          "time_until_exit": 2.9142562265925154,
+          "arrivals": 29711,
+          "successes": 28668,
+          "losses": 1043,
+          "seed": 20261029,
+          "cohort_followup": 8.853292412255541
+        },
+        {
+          "loss": 0.0356431700517722,
+          "delay_success": 3.0628556713299258,
+          "throughput": 0.5812,
+          "mean_n": 1.805057583847343,
+          "time_until_exit": 2.994180078588185,
+          "arrivals": 30132,
+          "successes": 29058,
+          "losses": 1074,
+          "seed": 20261030,
+          "cohort_followup": 0.6416779129140195
+        },
+        {
+          "loss": 0.03286384976525822,
+          "delay_success": 2.994086075853119,
+          "throughput": 0.58092,
+          "mean_n": 1.7600918177185743,
+          "time_until_exit": 2.93026307348346,
+          "arrivals": 30033,
+          "successes": 29046,
+          "losses": 987,
+          "seed": 20261031,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.03554842805118439,
+          "delay_success": 3.0143586837716017,
+          "throughput": 0.57736,
+          "mean_n": 1.7657142115227484,
+          "time_until_exit": 2.949581776259689,
+          "arrivals": 29931,
+          "successes": 28867,
+          "losses": 1064,
+          "seed": 20261032,
+          "cohort_followup": 0.9089432053515338
+        },
+        {
+          "loss": 0.03423991414869714,
+          "delay_success": 3.028687928003602,
+          "throughput": 0.576,
+          "mean_n": 1.7672476250072184,
+          "time_until_exit": 2.963244230253569,
+          "arrivals": 29819,
+          "successes": 28798,
+          "losses": 1021,
+          "seed": 20261033,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.03657763995865426,
+          "delay_success": 3.0584813357566167,
+          "throughput": 0.5779,
+          "mean_n": 1.7920719667624747,
+          "time_until_exit": 2.987676068332839,
+          "arrivals": 29991,
+          "successes": 28894,
+          "losses": 1097,
+          "seed": 20261034,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.03771217224753979,
+          "delay_success": 3.068789661150792,
+          "throughput": 0.58272,
+          "mean_n": 1.813491634338897,
+          "time_until_exit": 2.994610592210506,
+          "arrivals": 30282,
+          "successes": 29140,
+          "losses": 1142,
+          "seed": 20261035,
+          "cohort_followup": 3.6220757264163694
+        },
+        {
+          "loss": 0.03593765511764122,
+          "delay_success": 3.035374323841436,
+          "throughput": 0.58268,
+          "mean_n": 1.7908580307256297,
+          "time_until_exit": 2.963074557144538,
+          "arrivals": 30219,
+          "successes": 29133,
+          "losses": 1086,
+          "seed": 20261036,
+          "cohort_followup": 0.21788668225781294
+        },
+        {
+          "loss": 0.0375599450015091,
+          "delay_success": 3.052483527669881,
+          "throughput": 0.57406,
+          "mean_n": 1.7772943539252914,
+          "time_until_exit": 2.9799031829506784,
+          "arrivals": 29819,
+          "successes": 28699,
+          "losses": 1120,
+          "seed": 20261037,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.037528179286566765,
+          "delay_success": 3.057576405591452,
+          "throughput": 0.5806,
+          "mean_n": 1.8002850723354817,
+          "time_until_exit": 2.9841917910695397,
+          "arrivals": 30164,
+          "successes": 29032,
+          "losses": 1132,
+          "seed": 20261038,
+          "cohort_followup": 3.3444869965387625
+        },
+        {
+          "loss": 0.03537351640679544,
+          "delay_success": 3.014772930528991,
+          "throughput": 0.58028,
+          "mean_n": 1.773011163022938,
+          "time_until_exit": 2.9473372543893057,
+          "arrivals": 30079,
+          "successes": 29015,
+          "losses": 1064,
+          "seed": 20261039,
+          "cohort_followup": 2.1007681225819397
+        },
+        {
+          "loss": 0.033043419859632626,
+          "delay_success": 2.9876025422046895,
+          "throughput": 0.5758,
+          "mean_n": 1.7422186352434952,
+          "time_until_exit": 2.925803414410738,
+          "arrivals": 29779,
+          "successes": 28795,
+          "losses": 984,
+          "seed": 20261040,
+          "cohort_followup": 8.419920731983439
+        },
+        {
+          "loss": 0.03295205160603844,
+          "delay_success": 3.021229353069729,
+          "throughput": 0.58168,
+          "mean_n": 1.777929002460856,
+          "time_until_exit": 2.9559809605892466,
+          "arrivals": 30074,
+          "successes": 29083,
+          "losses": 991,
+          "seed": 20261041,
+          "cohort_followup": 4.13424350918649
+        },
+        {
+          "loss": 0.03403333333333333,
+          "delay_success": 3.029609343299197,
+          "throughput": 0.57952,
+          "mean_n": 1.7767354963771966,
+          "time_until_exit": 2.9616875254139354,
+          "arrivals": 30000,
+          "successes": 28979,
+          "losses": 1021,
+          "seed": 20261042,
+          "cohort_followup": 5.606151375199261
+        },
+        {
+          "loss": 0.03267603757244687,
+          "delay_success": 2.9999180197226565,
+          "throughput": 0.58084,
+          "mean_n": 1.761895862213139,
+          "time_until_exit": 2.934300873436031,
+          "arrivals": 30022,
+          "successes": 29041,
+          "losses": 981,
+          "seed": 20261043,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.034352799919954644,
+          "delay_success": 3.030803183928395,
+          "throughput": 0.57908,
+          "mean_n": 1.7793081771198473,
+          "time_until_exit": 2.967147363431714,
+          "arrivals": 29983,
+          "successes": 28953,
+          "losses": 1030,
+          "seed": 20261044,
+          "cohort_followup": 0.4395902769974782
+        },
+        {
+          "loss": 0.032824503641624266,
+          "delay_success": 3.0258401190028814,
+          "throughput": 0.58162,
+          "mean_n": 1.7805746427123499,
+          "time_until_exit": 2.9608351060525537,
+          "arrivals": 30069,
+          "successes": 29082,
+          "losses": 987,
+          "seed": 20261045,
+          "cohort_followup": 0.6186682759216637
+        },
+        {
+          "loss": 0.031186008258081842,
+          "delay_success": 2.987325798668661,
+          "throughput": 0.57724,
+          "mean_n": 1.7436201205961332,
+          "time_until_exit": 2.9261634745755147,
+          "arrivals": 29789,
+          "successes": 28860,
+          "losses": 929,
+          "seed": 20261046,
+          "cohort_followup": 0.9428047447581775
+        },
+        {
+          "loss": 0.036629064366290646,
+          "delay_success": 3.0773838164336165,
+          "throughput": 0.58072,
+          "mean_n": 1.812265792021454,
+          "time_until_exit": 3.006413059093366,
+          "arrivals": 30140,
+          "successes": 29036,
+          "losses": 1104,
+          "seed": 20261047,
+          "cohort_followup": 0.0
+        },
+        {
+          "loss": 0.0332793013331569,
+          "delay_success": 3.0316811178405736,
+          "throughput": 0.5845,
+          "mean_n": 1.7973245656558543,
+          "time_until_exit": 2.9727647122961316,
+          "arrivals": 30229,
+          "successes": 29223,
+          "losses": 1006,
+          "seed": 20261048,
+          "cohort_followup": 1.4558329687206424
+        }
+      ],
+      "summary": {
+        "loss": {
+          "exact": 0.035180865354987004,
+          "estimate": 0.03510671170417676,
+          "se": 0.00039136569763304613,
+          "ci95": [
+            0.0342971100753112,
+            0.035916313333042314
+          ],
+          "family_ci95": [
+            0.033825435931090664,
+            0.03638798747726285
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.21077835937806136
+        },
+        "delay_success": {
+          "exact": 3.026726070964134,
+          "estimate": 3.0292569552932798,
+          "se": 0.005732122782108474,
+          "ci95": [
+            3.0173991558762148,
+            3.0411147547103448
+          ],
+          "family_ci95": [
+            3.0104907984903484,
+            3.048023112096211
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.0836178851275901
+        },
+        "throughput": {
+          "exact": 0.5788914807870076,
+          "estimate": 0.5793499999999999,
+          "se": 0.0005890387649948598,
+          "ci95": [
+            0.5781314804759615,
+            0.5805685195240383
+          ],
+          "family_ci95": [
+            0.5774215706471952,
+            0.5812784293528046
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.07920641920122508
+        },
+        "mean_n": {
+          "exact": 1.7751427269800801,
+          "estimate": 1.778439668980971,
+          "se": 0.004287246991201482,
+          "ci95": [
+            1.7695708228648759,
+            1.787308515097066
+          ],
+          "family_ci95": [
+            1.7644038305406455,
+            1.7924755074212964
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.18572827698760075
+        },
+        "time_until_exit": {
+          "exact": 2.9585712116334686,
+          "estimate": 2.961910773345071,
+          "se": 0.005077858871911661,
+          "ci95": [
+            2.951406421945057,
+            2.972415124745085
+          ],
+          "family_ci95": [
+            2.945286583767192,
+            2.97853496292295
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.11287751663610378
+        }
+      }
+    },
+    "busy": {
+      "params": {
+        "lam": 1.4,
+        "mu1": 1.5,
+        "mu2": 1.2,
+        "nu": 0.8,
+        "c1": 2,
+        "c2": 2,
+        "k": 3
+      },
+      "analytical": {
+        "loss": 0.39249857732824855,
+        "delay_success": 4.900571715859357,
+        "throughput": 0.8505019917404516,
+        "mean_n": 4.6103073448981915,
+        "time_until_exit": 3.2930766749272844,
+        "external_loss_rate": 0.37735705276912346,
+        "internal_loss_rate": 0.17214095549042452,
+        "immediate_loss": 0.26954075197794536,
+        "states": 36,
+        "tagged_states": 99,
+        "balance_residual": 3.3306690738754696e-16,
+        "stationary_residual": 1.3877787807814457e-16
+      },
+      "runs": [
+        {
+          "loss": 0.39221544047227663,
+          "delay_success": 4.8677982898242815,
+          "throughput": 0.8504,
+          "mean_n": 4.5956347645585875,
+          "time_until_exit": 3.2846685484648224,
+          "arrivals": 69959,
+          "successes": 42520,
+          "losses": 27439,
+          "seed": 20361025,
+          "cohort_followup": 6.84732177015394
+        },
+        {
+          "loss": 0.3931391272126101,
+          "delay_success": 4.899581810442721,
+          "throughput": 0.85166,
+          "mean_n": 4.613597747203362,
+          "time_until_exit": 3.287745673505781,
+          "arrivals": 70166,
+          "successes": 42581,
+          "losses": 27585,
+          "seed": 20361026,
+          "cohort_followup": 6.773780134411936
+        },
+        {
+          "loss": 0.3942918900470699,
+          "delay_success": 4.922739190419209,
+          "throughput": 0.85186,
+          "mean_n": 4.646401018541768,
+          "time_until_exit": 3.3038649730330483,
+          "arrivals": 70321,
+          "successes": 42594,
+          "losses": 27727,
+          "seed": 20361027,
+          "cohort_followup": 21.46003873866721
+        },
+        {
+          "loss": 0.3915341647737825,
+          "delay_success": 4.912851579774003,
+          "throughput": 0.8519,
+          "mean_n": 4.6106995025967805,
+          "time_until_exit": 3.2935966971770756,
+          "arrivals": 69999,
+          "successes": 42592,
+          "losses": 27407,
+          "seed": 20361028,
+          "cohort_followup": 10.911530889679852
+        },
+        {
+          "loss": 0.3910925140433337,
+          "delay_success": 4.900809583299589,
+          "throughput": 0.84984,
+          "mean_n": 4.618275450823225,
+          "time_until_exit": 3.3090762962654616,
+          "arrivals": 69784,
+          "successes": 42492,
+          "losses": 27292,
+          "seed": 20361029,
+          "cohort_followup": 15.82140987405728
+        },
+        {
+          "loss": 0.3902924864934581,
+          "delay_success": 4.889242868523074,
+          "throughput": 0.85094,
+          "mean_n": 4.604089785667268,
+          "time_until_exit": 3.2985815383491253,
+          "arrivals": 69781,
+          "successes": 42546,
+          "losses": 27235,
+          "seed": 20361030,
+          "cohort_followup": 2.9303000911168056
+        },
+        {
+          "loss": 0.3895150984305673,
+          "delay_success": 4.870577123025541,
+          "throughput": 0.85032,
+          "mean_n": 4.583883520386836,
+          "time_until_exit": 3.2909876066356945,
+          "arrivals": 69643,
+          "successes": 42516,
+          "losses": 27127,
+          "seed": 20361031,
+          "cohort_followup": 3.9739838012246764
+        },
+        {
+          "loss": 0.39015757022151176,
+          "delay_success": 4.861568937443858,
+          "throughput": 0.85456,
+          "mean_n": 4.590418404432397,
+          "time_until_exit": 3.2756093812891423,
+          "arrivals": 70064,
+          "successes": 42728,
+          "losses": 27336,
+          "seed": 20361032,
+          "cohort_followup": 3.4054724392990465
+        },
+        {
+          "loss": 0.39219907008782506,
+          "delay_success": 4.917298586095093,
+          "throughput": 0.84708,
+          "mean_n": 4.607792417561916,
+          "time_until_exit": 3.305923141921667,
+          "arrivals": 69684,
+          "successes": 42354,
+          "losses": 27330,
+          "seed": 20361033,
+          "cohort_followup": 10.220830365731672
+        },
+        {
+          "loss": 0.3936698740827456,
+          "delay_success": 4.903406553282437,
+          "throughput": 0.84944,
+          "mean_n": 4.607354146528475,
+          "time_until_exit": 3.2886569483238506,
+          "arrivals": 70046,
+          "successes": 42471,
+          "losses": 27575,
+          "seed": 20361034,
+          "cohort_followup": 9.506234541215235
+        },
+        {
+          "loss": 0.3938593359514459,
+          "delay_success": 4.927827974879363,
+          "throughput": 0.8489,
+          "mean_n": 4.62638002932828,
+          "time_until_exit": 3.303378059257997,
+          "arrivals": 70025,
+          "successes": 42445,
+          "losses": 27580,
+          "seed": 20361035,
+          "cohort_followup": 10.117122295145236
+        },
+        {
+          "loss": 0.39220032605897664,
+          "delay_success": 4.896395916290655,
+          "throughput": 0.84998,
+          "mean_n": 4.602563776051481,
+          "time_until_exit": 3.2912066674464246,
+          "arrivals": 69926,
+          "successes": 42501,
+          "losses": 27425,
+          "seed": 20361036,
+          "cohort_followup": 6.359670814628771
+        },
+        {
+          "loss": 0.3864323779346104,
+          "delay_success": 4.869645739714394,
+          "throughput": 0.85196,
+          "mean_n": 4.594490602205359,
+          "time_until_exit": 3.3088085244354963,
+          "arrivals": 69430,
+          "successes": 42600,
+          "losses": 26830,
+          "seed": 20361037,
+          "cohort_followup": 13.940482854901347
+        },
+        {
+          "loss": 0.3982274489752439,
+          "delay_success": 4.939949434581877,
+          "throughput": 0.84736,
+          "mean_n": 4.634769745477889,
+          "time_until_exit": 3.2913890794010103,
+          "arrivals": 70407,
+          "successes": 42369,
+          "losses": 28038,
+          "seed": 20361038,
+          "cohort_followup": 3.537385089279269
+        },
+        {
+          "loss": 0.394367995460349,
+          "delay_success": 4.894296508871969,
+          "throughput": 0.85384,
+          "mean_n": 4.615807051879843,
+          "time_until_exit": 3.2739324847121614,
+          "arrivals": 70490,
+          "successes": 42691,
+          "losses": 27799,
+          "seed": 20361039,
+          "cohort_followup": 3.537323502190702
+        },
+        {
+          "loss": 0.39888499749839185,
+          "delay_success": 4.962888879887675,
+          "throughput": 0.84102,
+          "mean_n": 4.629421603275411,
+          "time_until_exit": 3.3089337087653448,
+          "arrivals": 69955,
+          "successes": 42051,
+          "losses": 27904,
+          "seed": 20361040,
+          "cohort_followup": 9.636164279341756
+        },
+        {
+          "loss": 0.3919887601789196,
+          "delay_success": 4.9291894021317,
+          "throughput": 0.84818,
+          "mean_n": 4.622044417146193,
+          "time_until_exit": 3.313344296319362,
+          "arrivals": 69752,
+          "successes": 42410,
+          "losses": 27342,
+          "seed": 20361041,
+          "cohort_followup": 7.900069718933082
+        },
+        {
+          "loss": 0.3894774414620217,
+          "delay_success": 4.887945923717748,
+          "throughput": 0.85524,
+          "mean_n": 4.616602130333393,
+          "time_until_exit": 3.295798053197569,
+          "arrivals": 70040,
+          "successes": 42761,
+          "losses": 27279,
+          "seed": 20361042,
+          "cohort_followup": 13.470378989935853
+        },
+        {
+          "loss": 0.39087551534585435,
+          "delay_success": 4.8975593663402694,
+          "throughput": 0.851,
+          "mean_n": 4.606436340152952,
+          "time_until_exit": 3.2971283808981524,
+          "arrivals": 69856,
+          "successes": 42551,
+          "losses": 27305,
+          "seed": 20361043,
+          "cohort_followup": 7.820020520222897
+        },
+        {
+          "loss": 0.3896397686272264,
+          "delay_success": 4.868171179038799,
+          "throughput": 0.8526,
+          "mean_n": 4.586420080425585,
+          "time_until_exit": 3.283459263287379,
+          "arrivals": 69844,
+          "successes": 42630,
+          "losses": 27214,
+          "seed": 20361044,
+          "cohort_followup": 10.73879551616119
+        },
+        {
+          "loss": 0.39171636655579767,
+          "delay_success": 4.902413753651663,
+          "throughput": 0.8486,
+          "mean_n": 4.605701778511535,
+          "time_until_exit": 3.301508482335223,
+          "arrivals": 69752,
+          "successes": 42429,
+          "losses": 27323,
+          "seed": 20361045,
+          "cohort_followup": 8.227323283397709
+        },
+        {
+          "loss": 0.3907525062027622,
+          "delay_success": 4.9033712833279335,
+          "throughput": 0.84962,
+          "mean_n": 4.609351691656711,
+          "time_until_exit": 3.305151128389038,
+          "arrivals": 69727,
+          "successes": 42481,
+          "losses": 27246,
+          "seed": 20361046,
+          "cohort_followup": 11.391847358456289
+        },
+        {
+          "loss": 0.38880029881193523,
+          "delay_success": 4.905728510122073,
+          "throughput": 0.8509,
+          "mean_n": 4.609022441546436,
+          "time_until_exit": 3.310915565841062,
+          "arrivals": 69609,
+          "successes": 42545,
+          "losses": 27064,
+          "seed": 20361047,
+          "cohort_followup": 14.296068676216237
+        },
+        {
+          "loss": 0.39182016411315773,
+          "delay_success": 4.896937966989661,
+          "throughput": 0.84788,
+          "mean_n": 4.595308047028555,
+          "time_until_exit": 3.296300411163084,
+          "arrivals": 69708,
+          "successes": 42395,
+          "losses": 27313,
+          "seed": 20361048,
+          "cohort_followup": 23.479341703030514
+        }
+      ],
+      "summary": {
+        "loss": {
+          "exact": 0.39249857732824855,
+          "estimate": 0.39196460579341136,
+          "se": 0.0005619475382493589,
+          "ci95": [
+            0.3908021287417556,
+            0.39312708284506714
+          ],
+          "family_ci95": [
+            0.3901248692736835,
+            0.3938043423131392
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.13604419625466144
+        },
+        "delay_success": {
+          "exact": 4.900571715859357,
+          "estimate": 4.90117484840315,
+          "se": 0.0050043645611388635,
+          "ci95": [
+            4.890822531568438,
+            4.911527165237861
+          ],
+          "family_ci95": [
+            4.884791268772495,
+            4.9175584280338045
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.012307391438449236
+        },
+        "throughput": {
+          "exact": 0.8505019917404516,
+          "estimate": 0.8502116666666667,
+          "se": 0.0005911508263691324,
+          "ci95": [
+            0.8489887780107926,
+            0.8514345553225408
+          ],
+          "family_ci95": [
+            0.8482763227245494,
+            0.852147010608784
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.0341357312039666
+        },
+        "mean_n": {
+          "exact": 4.6103073448981915,
+          "estimate": 4.609686103888343,
+          "se": 0.003100063431300324,
+          "ci95": [
+            4.603273134078402,
+            4.616099073698284
+          ],
+          "family_ci95": [
+            4.599536936003734,
+            4.619835271772953
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.013475045444329313
+        },
+        "time_until_exit": {
+          "exact": 3.2930766749272844,
+          "estimate": 3.296665204600624,
+          "se": 0.002226951270722047,
+          "ci95": [
+            3.2920584049064123,
+            3.3012720042948356
+          ],
+          "family_ci95": [
+            3.2893744820659814,
+            3.3039559271352665
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.1089719440990179
+        }
+      }
+    },
+    "slow_retrial": {
+      "params": {
+        "lam": 1.4,
+        "mu1": 1.5,
+        "mu2": 1.2,
+        "nu": 0.15,
+        "c1": 2,
+        "c2": 2,
+        "k": 3
+      },
+      "analytical": {
+        "loss": 0.4317010273047065,
+        "delay_success": 5.398841991836168,
+        "throughput": 0.7956185617734106,
+        "mean_n": 4.7379790570901115,
+        "time_until_exit": 3.3842707550643736,
+        "external_loss_rate": 0.40094423138109736,
+        "internal_loss_rate": 0.20343720684549174,
+        "immediate_loss": 0.28638873670078385,
+        "states": 36,
+        "tagged_states": 99,
+        "balance_residual": 1.942890293094024e-16,
+        "stationary_residual": 5.551115123125783e-17
+      },
+      "runs": [
+        {
+          "loss": 0.43490976531849634,
+          "delay_success": 5.388791229362125,
+          "throughput": 0.7922,
+          "mean_n": 4.741620394178477,
+          "time_until_exit": 3.3824583358984524,
+          "arrivals": 70095,
+          "successes": 39610,
+          "losses": 30485,
+          "seed": 20461025,
+          "cohort_followup": 22.77740521220403
+        },
+        {
+          "loss": 0.4361410923738069,
+          "delay_success": 5.421612269264594,
+          "throughput": 0.79514,
+          "mean_n": 4.752356295118606,
+          "time_until_exit": 3.370503004141241,
+          "arrivals": 70507,
+          "successes": 39756,
+          "losses": 30751,
+          "seed": 20461026,
+          "cohort_followup": 36.22104864064022
+        },
+        {
+          "loss": 0.4303942160686985,
+          "delay_success": 5.4006862607864745,
+          "throughput": 0.79732,
+          "mean_n": 4.738279631001145,
+          "time_until_exit": 3.385058650047345,
+          "arrivals": 69987,
+          "successes": 39865,
+          "losses": 30122,
+          "seed": 20461027,
+          "cohort_followup": 21.563831172286882
+        },
+        {
+          "loss": 0.4321608040201005,
+          "delay_success": 5.438643624797047,
+          "throughput": 0.79328,
+          "mean_n": 4.7382475490926215,
+          "time_until_exit": 3.3915050369237485,
+          "arrivals": 69849,
+          "successes": 39663,
+          "losses": 30186,
+          "seed": 20461028,
+          "cohort_followup": 10.953927104725153
+        },
+        {
+          "loss": 0.433283592695232,
+          "delay_success": 5.401256442526207,
+          "throughput": 0.79756,
+          "mean_n": 4.74777032479363,
+          "time_until_exit": 3.3737593987676404,
+          "arrivals": 70365,
+          "successes": 39877,
+          "losses": 30488,
+          "seed": 20461029,
+          "cohort_followup": 31.506576224019227
+        },
+        {
+          "loss": 0.43456779576552335,
+          "delay_success": 5.4180672991093966,
+          "throughput": 0.79424,
+          "mean_n": 4.741818636417818,
+          "time_until_exit": 3.3759318039611896,
+          "arrivals": 70233,
+          "successes": 39712,
+          "losses": 30521,
+          "seed": 20461030,
+          "cohort_followup": 30.703321423767193
+        },
+        {
+          "loss": 0.4300694305551587,
+          "delay_success": 5.383996104428063,
+          "throughput": 0.7979,
+          "mean_n": 4.741325738864392,
+          "time_until_exit": 3.3870906982348195,
+          "arrivals": 69998,
+          "successes": 39894,
+          "losses": 30104,
+          "seed": 20461031,
+          "cohort_followup": 25.06776643410558
+        },
+        {
+          "loss": 0.4305160358608462,
+          "delay_success": 5.383446892509793,
+          "throughput": 0.79656,
+          "mean_n": 4.722162431940823,
+          "time_until_exit": 3.3762607375525744,
+          "arrivals": 69937,
+          "successes": 39828,
+          "losses": 30109,
+          "seed": 20461032,
+          "cohort_followup": 19.426690369633434
+        },
+        {
+          "loss": 0.43101433579388376,
+          "delay_success": 5.35639639966044,
+          "throughput": 0.79856,
+          "mean_n": 4.726727217102831,
+          "time_until_exit": 3.367584794448263,
+          "arrivals": 70174,
+          "successes": 39928,
+          "losses": 30246,
+          "seed": 20461033,
+          "cohort_followup": 20.241068010844174
+        },
+        {
+          "loss": 0.4324029874281455,
+          "delay_success": 5.418609242347599,
+          "throughput": 0.7919,
+          "mean_n": 4.730222947692278,
+          "time_until_exit": 3.389776034733503,
+          "arrivals": 69759,
+          "successes": 39595,
+          "losses": 30164,
+          "seed": 20461034,
+          "cohort_followup": 17.01459301981231
+        },
+        {
+          "loss": 0.4307391934766068,
+          "delay_success": 5.3966976471890815,
+          "throughput": 0.79298,
+          "mean_n": 4.7266292186001,
+          "time_until_exit": 3.393637276982996,
+          "arrivals": 69657,
+          "successes": 39653,
+          "losses": 30004,
+          "seed": 20461035,
+          "cohort_followup": 35.62873120837321
+        },
+        {
+          "loss": 0.4315794000028667,
+          "delay_success": 5.4404335458326685,
+          "throughput": 0.79316,
+          "mean_n": 4.739871183749482,
+          "time_until_exit": 3.39702498533964,
+          "arrivals": 69767,
+          "successes": 39657,
+          "losses": 30110,
+          "seed": 20461036,
+          "cohort_followup": 19.642430671861803
+        },
+        {
+          "loss": 0.429736368569878,
+          "delay_success": 5.350255697540132,
+          "throughput": 0.79858,
+          "mean_n": 4.717860403461019,
+          "time_until_exit": 3.3692557321513465,
+          "arrivals": 70022,
+          "successes": 39931,
+          "losses": 30091,
+          "seed": 20461037,
+          "cohort_followup": 29.51445473745116
+        },
+        {
+          "loss": 0.4338113229148778,
+          "delay_success": 5.4313925318509195,
+          "throughput": 0.7913,
+          "mean_n": 4.747617147177595,
+          "time_until_exit": 3.3971120081719186,
+          "arrivals": 69876,
+          "successes": 39563,
+          "losses": 30313,
+          "seed": 20461038,
+          "cohort_followup": 19.268192404604633
+        },
+        {
+          "loss": 0.434235548120505,
+          "delay_success": 5.404536817479244,
+          "throughput": 0.79142,
+          "mean_n": 4.74322998349889,
+          "time_until_exit": 3.391409494789082,
+          "arrivals": 69939,
+          "successes": 39569,
+          "losses": 30370,
+          "seed": 20461039,
+          "cohort_followup": 43.43250025509769
+        },
+        {
+          "loss": 0.4324046879009952,
+          "delay_success": 5.401833693685938,
+          "throughput": 0.7962,
+          "mean_n": 4.74580437805103,
+          "time_until_exit": 3.382947624126201,
+          "arrivals": 70138,
+          "successes": 39810,
+          "losses": 30328,
+          "seed": 20461040,
+          "cohort_followup": 29.45017825903051
+        },
+        {
+          "loss": 0.4357147924796027,
+          "delay_success": 5.40905167218669,
+          "throughput": 0.79534,
+          "mean_n": 4.743933122365661,
+          "time_until_exit": 3.3652578621697806,
+          "arrivals": 70475,
+          "successes": 39768,
+          "losses": 30707,
+          "seed": 20461041,
+          "cohort_followup": 23.849860717462434
+        },
+        {
+          "loss": 0.4339468712429152,
+          "delay_success": 5.405005960345905,
+          "throughput": 0.79092,
+          "mean_n": 4.735616049680818,
+          "time_until_exit": 3.3890627914528477,
+          "arrivals": 69868,
+          "successes": 39549,
+          "losses": 30319,
+          "seed": 20461042,
+          "cohort_followup": 18.410797595017357
+        },
+        {
+          "loss": 0.424994949640703,
+          "delay_success": 5.35397952430498,
+          "throughput": 0.79698,
+          "mean_n": 4.708144733387417,
+          "time_until_exit": 3.396112886564805,
+          "arrivals": 69302,
+          "successes": 39849,
+          "losses": 29453,
+          "seed": 20461043,
+          "cohort_followup": 13.277688388625393
+        },
+        {
+          "loss": 0.4321927929976128,
+          "delay_success": 5.411474691301664,
+          "throughput": 0.79918,
+          "mean_n": 4.747638365854672,
+          "time_until_exit": 3.3730375463206377,
+          "arrivals": 70376,
+          "successes": 39960,
+          "losses": 30416,
+          "seed": 20461044,
+          "cohort_followup": 13.993659828680393
+        },
+        {
+          "loss": 0.4343198301534603,
+          "delay_success": 5.410108759615403,
+          "throughput": 0.79402,
+          "mean_n": 4.744701141260241,
+          "time_until_exit": 3.3801176195661555,
+          "arrivals": 70181,
+          "successes": 39700,
+          "losses": 30481,
+          "seed": 20461045,
+          "cohort_followup": 10.399236748584372
+        },
+        {
+          "loss": 0.43068825447680076,
+          "delay_success": 5.414274474886626,
+          "throughput": 0.7961,
+          "mean_n": 4.743125611070286,
+          "time_until_exit": 3.392425773807589,
+          "arrivals": 69916,
+          "successes": 39804,
+          "losses": 30112,
+          "seed": 20461046,
+          "cohort_followup": 39.93837217277178
+        },
+        {
+          "loss": 0.42855710992425433,
+          "delay_success": 5.367642319801769,
+          "throughput": 0.7982,
+          "mean_n": 4.736590182720916,
+          "time_until_exit": 3.3909619967380755,
+          "arrivals": 69839,
+          "successes": 39909,
+          "losses": 29930,
+          "seed": 20461047,
+          "cohort_followup": 17.259311167486885
+        },
+        {
+          "loss": 0.43394499349246984,
+          "delay_success": 5.414278456181967,
+          "throughput": 0.79154,
+          "mean_n": 4.749269666466937,
+          "time_until_exit": 3.395287756122462,
+          "arrivals": 69919,
+          "successes": 39578,
+          "losses": 30341,
+          "seed": 20461048,
+          "cohort_followup": 18.414972311678866
+        }
+      ],
+      "summary": {
+        "loss": {
+          "exact": 0.4317010273047065,
+          "estimate": 0.4321802571363933,
+          "se": 0.0005169480824565436,
+          "ci95": [
+            0.43111086855142805,
+            0.43324964572135855
+          ],
+          "family_ci95": [
+            0.43048784245109833,
+            0.43387267182168826
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.11100965746568557
+        },
+        "delay_success": {
+          "exact": 5.398841991836168,
+          "estimate": 5.400936314874781,
+          "se": 0.005074498684074588,
+          "ci95": [
+            5.390438914552909,
+            5.411433715196654
+          ],
+          "family_ci95": [
+            5.384323126075189,
+            5.4175495036743735
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": 0.03879207877874835
+        },
+        "throughput": {
+          "exact": 0.7956185617734106,
+          "estimate": 0.7950241666666668,
+          "se": 0.0005503792884103772,
+          "ci95": [
+            0.7938856203630796,
+            0.7961627129702539
+          ],
+          "family_ci95": [
+            0.7932223029557859,
+            0.7968260303775476
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.07470855197482722
+        },
+        "mean_n": {
+          "exact": 4.7379790570901115,
+          "estimate": 4.737940098064487,
+          "se": 0.002221107811460707,
+          "ci95": [
+            4.733345386486748,
+            4.742534809642226
+          ],
+          "family_ci95": [
+            4.730668506186485,
+            4.745211689942489
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.0008222709546579804
+        },
+        "time_until_exit": {
+          "exact": 3.3842707550643736,
+          "estimate": 3.3838991603755133,
+          "se": 0.0020840942570396056,
+          "ci95": [
+            3.3795878829298576,
+            3.388210437821169
+          ],
+          "family_ci95": [
+            3.377076131437304,
+            3.3907221893137227
+          ],
+          "covered95": true,
+          "covered_family": true,
+          "relative_error_percent": -0.01098005200394225
+        }
+      }
+    }
+  }
+}

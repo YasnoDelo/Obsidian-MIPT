@@ -1,0 +1,1 @@
+- [x] answer the question “ What is your leadership style?” Explain why you think so and enumerate the a dvantages/disadvantages of your leadership style. Present your point in class in a 2-3 min talk. 📅 2026-11-02 ✅ 2026-11-02

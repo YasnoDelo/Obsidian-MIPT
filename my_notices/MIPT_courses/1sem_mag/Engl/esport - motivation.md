@@ -1,0 +1,9 @@
+Ten seconds left. Your team is one point behind. You see a chance to score, but a teammate has a better angle. Do you take the shot, or do you pass? Hold that decision for a moment. Did you picture a football pitch? I was describing five students playing a competitive video game. Would you give their captain different advice?  
+  
+I believe esports is as important as other sports because it gives young people a place to learn what it means to be responsible for a team. Think about the player who takes the shot and misses. At the next practice, she can watch that moment again. For the first time, she hears her teammate say, “I’m open.” She was so focused on scoring that she missed his voice. Now she has something specific to practise. Next time, she listens. Next time, she passes. Next time, five people make that decision together.  
+  
+Some of you may wonder why students who already play at home need your support. That is a fair question. At home, a student can play for hours and keep making the same mistake. A coach can pause the recording, ask each player what they heard and let the team try again. That is the opportunity I am asking you to fund.  
+  
+Today, I invite your businesses to sponsor our university’s first esports team for one semester. Your funding would pay for a part-time coach, shared headsets and entry into a student tournament. We would use an existing computer room. At the end of the semester, you could attend a match, meet the players and decide whether to renew your support.  
+  
+Remember those ten seconds? One player has the ball. Another has the better angle. What happens next depends on whether they have learned to trust each other. Sponsor their first season. Give them a place to learn that pass.
